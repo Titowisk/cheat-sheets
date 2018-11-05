@@ -25,12 +25,15 @@ http://api.jquery.com/each/
 
 ## Executar comandos quando o DOM é carregado
 https://api.jquery.com/ready/
+
 ```$( function )``` ou ```$( document ).ready( function )``` ou...
 
 ## Lidando com eventos
 ```$( target ).on( event, callback)```
 O callback pode usar como argumento o objeto event (do jQuery) que é fornecido quando um evento é ouvido.
+
 https://api.jquery.com/category/events/event-object/
+
 https://api.jquery.com/event.target/
 
 ```
