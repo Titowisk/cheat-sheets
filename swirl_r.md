@@ -100,3 +100,10 @@ The main difference, as you'll see, is that matrices can only contain a single c
 3   Kelly   3      7 11     15   19
 4    Sean   4      8 12     16   20
 ```
+## Lesson 08: Logic
+
+- Operadores:
+```
+== != & && | || ! > < >= <=
+```
+*Os operadores condicionais: &, &&, |, || funcionam diferente quando usados com vetores.
