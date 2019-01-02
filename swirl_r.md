@@ -55,3 +55,4 @@ foo bar
  11   2 
 
 ```
+## Lesson 07: 7: Matrices and Data Frames
