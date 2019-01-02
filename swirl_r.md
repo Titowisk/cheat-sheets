@@ -44,3 +44,14 @@
 [36]          NA          NA          NA
 
 ```
+- subsetting named vectors:
+```
+> vect <- c(foo = 11, bar = 2, norf = NA)
+> vect
+ foo  bar norf 
+  11    2   NA 
+> vect[c("foo", "bar")]
+foo bar 
+ 11   2 
+
+```
