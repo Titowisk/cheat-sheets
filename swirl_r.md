@@ -55,4 +55,48 @@ foo bar
  11   2 
 
 ```
-## Lesson 07: 7: Matrices and Data Frames
+## Lesson 07: Matrices and Data Frames
+
+The main difference, as you'll see, is that matrices can only contain a single class of data, while data frames can consist of many different classes of data
+
+- It's okay if that last command seemed a little strange to you. It should! The dim() function
+| allows you to get OR set the `dim` attribute for an R object. In this case, we assigned the
+| value c(4, 5) to the `dim` attribute of my_vector
+
+```
+> dim(my_vector) <- c(4,5) gives my vector the dimensions 4 and 5 turningt it into a matrix
+> my_vector
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    5    9   13   17
+[2,]    2    6   10   14   18
+[3,]    3    7   11   15   19
+[4,]    4    8   12   16   20
+
+```
+- another way to build a matrix:
+```
+> my_matrix2 <- matrix(my_vector, nrow = 4, ncol = 5)
+```
+- creating data frames:
+```
+> patients <- c("Bill", "Gina", "Kelly","Sean")
+> my_data <- data.frame(patients, my_matrix)
+> my_data
+  patients X1 X2 X3 X4 X5
+1     Bill  1  5  9 13 17
+2     Gina  2  6 10 14 18
+3    Kelly  3  7 11 15 19
+4     Sean  4  8 12 16 20
+
+```
+- setting column names:
+```
+> cnames <- c("patient", "age", "weight", "bp", "rating","test")
+> colnames(my_data) <- cnames 
+> my_data
+  patient age weight bp rating test
+1    Bill   1      5  9     13   17
+2    Gina   2      6 10     14   18
+3   Kelly   3      7 11     15   19
+4    Sean   4      8 12     16   20
+```
