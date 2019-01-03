@@ -107,3 +107,31 @@ The main difference, as you'll see, is that matrices can only contain a single c
 == != & && | || ! > < >= <=
 ```
 *Os operadores condicionais: &, &&, |, || funcionam diferente quando usados com vetores.
+
+## Lesson 09: Functions
+To understand computations in R, two slogans are helpful: 1. Everything that exists is an
+| object. 2. Everything that happens is a function call.
+
+- In R, functions are declared this way:
+```
+boring_function <- function(x) {
+  x
+}
+```
+* The last expression will be returned by the function
+
+- I can pass functions as arguments (like javascript):
+```
+> args(remainder)
+function (num, divisor = 2) 
+NULL
+```
+- Ellipses (...) in functions:
+```
+telegram <- function(...){
+  paste("START", ..., "STOP")
+}
+> telegram("Eita", "opa")
+[1] "START Eita opa STOP"
+```
+
