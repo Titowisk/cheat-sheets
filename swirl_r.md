@@ -170,4 +170,46 @@ mad_libs <- function(...){
 }
   ```
 ## Lesson 10: Data Visualization:
+- head() shows the first lines of the table
+- tail() show the last lines of the table
+*Both can be altered to show a specific number of lines
+
+- summary():
+| provides different output for each variable, depending on its class. For numeric
+| data such as Precip_Min, summary() displays the minimum, 1st quartile, median, mean, 3rd
+| quartile, and maximum.
+
+```
+                    Scientific_Name              Duration              Active_Growth_Period
+ Abelmoschus                 :   1   Perennial        :3031   Spring and Summer   : 447     
+ Abelmoschus esculentus      :   1   Annual           : 682   Spring              : 144     
+ Abies                       :   1   Annual, Perennial: 179   Spring, Summer, Fall:  95     
+ Abies balsamea              :   1   Annual, Biennial :  95   Summer              :  92     
+ Abies balsamea var. balsamea:   1   Biennial         :  57   Summer and Fall     :  24     
+ Abutilon                    :   1   (Other)          :  92   (Other)             :  30     
+ (Other)                     :5160   NA's             :1030   NA's                :4334     
+      Foliage_Color      pH_Min          pH_Max         Precip_Min      Precip_Max    
+ Dark Green  :  82   Min.   :3.000   Min.   : 5.100   Min.   : 4.00   Min.   : 16.00  
+ Gray-Green  :  25   1st Qu.:4.500   1st Qu.: 7.000   1st Qu.:16.75   1st Qu.: 55.00  
+ Green       : 692   Median :5.000   Median : 7.300   Median :28.00   Median : 60.00  
+ Red         :   4   Mean   :4.997   Mean   : 7.344   Mean   :25.57   Mean   : 58.73  
+ White-Gray  :   9   3rd Qu.:5.500   3rd Qu.: 7.800   3rd Qu.:32.00   3rd Qu.: 60.00  
+ Yellow-Green:  20   Max.   :7.000   Max.   :10.000   Max.   :60.00   Max.   :200.00  
+ NA's        :4334   NA's   :4327    NA's   :4327     NA's   :4338    NA's   :4338    
+     Shade_Tolerance   Temp_Min_F    
+ Intermediate: 242   Min.   :-79.00  
+ Intolerant  : 349   1st Qu.:-38.00  
+ Tolerant    : 246   Median :-33.00  
+ NA's        :4329   Mean   :-22.53  
+                     3rd Qu.:-18.00  
+                     Max.   : 52.00  
+                     NA's   :4328   
+```
+
+For categorical variables (called 'factor' variables in R), summary() displays the number of
+| times each value (or 'level') occurs in the data
+
+In contrast, the summary for
+| Duration (also a factor variable) tells us that our dataset contains 3031 Perennial plants,
+| 682 Annual plants, etc.
 
