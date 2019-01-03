@@ -213,3 +213,17 @@ In contrast, the summary for
 | Duration (also a factor variable) tells us that our dataset contains 3031 Perennial plants,
 | 682 Annual plants, etc.
 
+- table():
+Since it is a categorical/factor variable, we can see how many
+| times each value actually occurs in the data with table(plants$Active_Growth_Period).
+```
+> table(plants$Active_Growth_Period)
+
+Fall, Winter and Spring                  Spring         Spring and Fall 
+                     15                     144                      10 
+      Spring and Summer    Spring, Summer, Fall                  Summer 
+                    447                      95                      92 
+        Summer and Fall              Year Round 
+                     24                       5 
+
+```
