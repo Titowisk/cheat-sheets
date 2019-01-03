@@ -242,3 +242,10 @@ Fall, Winter and Spring                  Spring         Spring and Fall
  $ Shade_Tolerance     : Factor w/ 3 levels "Intermediate",..: NA NA NA 3 NA NA NA NA 2 NA ...
  $ Temp_Min_F          : int  NA NA NA -43 NA NA NA NA -13 NA ...
 ```
+
+## Lesson 15: Base Graphics
+
+To acess specific columns in a dataframe I must use the notation $ in the dataframe object:
+```
+> plot(x = cars$speed, y = cars$dist)
+```
