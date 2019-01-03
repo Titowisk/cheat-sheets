@@ -169,3 +169,5 @@ mad_libs <- function(...){
   paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")
 }
   ```
+## Lesson 10: Data Visualization:
+
