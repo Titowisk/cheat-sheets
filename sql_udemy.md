@@ -41,6 +41,12 @@ todo
 todo
 ```
 
+## COUNT, GROUPBY E PERFOMANCE DE OPERADORES LÓGICOS:
+
+## USANDO UPDATE:
+
+## USANDO DELETE:
+
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
 
