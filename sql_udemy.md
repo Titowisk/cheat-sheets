@@ -43,9 +43,11 @@ todo
 
 ## COUNT, GROUPBY E PERFOMANCE DE OPERADORES LÓGICOS:
 
-## USANDO UPDATE:
+## Usando UPDATE:
 
-## USANDO DELETE:
+## Usando DELETE:
+
+## Modelagem de Banco de Dados para sistemas:
 
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
