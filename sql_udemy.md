@@ -27,7 +27,20 @@ Mostra o diretório de dados do MySQL
 - Modelagem Lógica - usa programas que fazem diagramas UML
 - Modelagem Física - scripts
 
-
+## Filtros
+Filtro com WHERE
+```
+todo
+```
+Filtro com LIKE (diminui perfomance da consulta)
+```
+todo
+```
+* caracter coringa "%" (qualquer coisa antes ou depois de algo)
+```
+todo
+```
 
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
+
