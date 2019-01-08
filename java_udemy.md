@@ -42,5 +42,7 @@ String myStringValue = "bla bla bla";
 ## Operators:
 Java uses The regular operators of common languages:
 ```
-+,=, /, %, *, +=, -=, /=, *=, ==, !=, <, >, <=, >= and so on
++,=, /, %, *, +=, -=, /=, *=, 
+==, !=, <, >, <=, >= 
+&&, || and so on
 ```
