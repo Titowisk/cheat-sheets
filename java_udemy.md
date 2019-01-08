@@ -40,9 +40,19 @@ String myStringValue = "bla bla bla";
 ```
 
 ## Operators:
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
+
+Precedence order:
+http://cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
+
 Java uses The regular operators of common languages:
 ```
 +,=, /, %, *, +=, -=, /=, *=, 
 ==, !=, <, >, <=, >= 
 &&, || and so on
+```
+
+* It does have ternary operator too:
+```
+int ternary = 1 > 2 ? 5 : 10; // ternary will be 10
 ```
