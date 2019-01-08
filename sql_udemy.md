@@ -49,6 +49,13 @@ todo
 
 ## Modelagem de Banco de Dados para sistemas:
 
+### Normalização 3NF:
+
+- 1ª Forma Normal:
+
+- Cardinalidade x Obrigatoriedade:
+
+
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
 
