@@ -106,20 +106,19 @@ Example:
 ```
 public static void main(String[] args) {
 	// write your code here
-        calculateScore("Tito", 500);
-        calculateScore(1000);
-    }
+	calculateScore("Tito", 500);
+	calculateScore(1000);
+}
 
-    public static int calculateScore( String playerName, int score) {
-        System.out.println("Player " + playerName + " score " + score + " points");
+public static int calculateScore( String playerName, int score) {
+	System.out.println("Player " + playerName + " score " + score + " points");
 
-        return  score * 1000;
-    }
+	return  score * 1000;
+}
 
-    public static int calculateScore(int score) {
-        System.out.println("Unamed player score " + score + " points");
+public static int calculateScore(int score) {
+	System.out.println("Unamed player score " + score + " points");
 
-        return  score * 1000;
-    }
- }
+	return  score * 1000;
+}
 ```
