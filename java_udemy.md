@@ -96,3 +96,30 @@ public class Main {
 }
 
 ```
+
+### Method Overloading:
+
+Using the same method name but with different args.
+*This can be useful when handling different args types using the same method name
+
+Example:
+```
+public static void main(String[] args) {
+	// write your code here
+        calculateScore("Tito", 500);
+        calculateScore(1000);
+    }
+
+    public static int calculateScore( String playerName, int score) {
+        System.out.println("Player " + playerName + " score " + score + " points");
+
+        return  score * 1000;
+    }
+
+    public static int calculateScore(int score) {
+        System.out.println("Unamed player score " + score + " points");
+
+        return  score * 1000;
+    }
+ }
+```
