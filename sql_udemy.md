@@ -55,6 +55,19 @@ todo
 
 - Cardinalidade x Obrigatoriedade:
 
+### Seleção, Projeção e Junção:
+
+- Seleção:
+
+- Projeção:
+
+- Junção (JOIN):
+
+### Views:
+
+- criar e apagar view:
+
+
 
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
