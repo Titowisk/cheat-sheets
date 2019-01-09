@@ -72,8 +72,9 @@ if (true)
 ```
 ## Methods:
 
-* You can't put a method inside another method
+*You can't put a method inside another method
 
+- common method structure:
 ```
 public static void calculateScore (args) {
  code...
