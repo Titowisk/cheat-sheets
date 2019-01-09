@@ -56,3 +56,42 @@ Java uses The regular operators of common languages:
 ```
 int ternary = 1 > 2 ? 5 : 10; // ternary will be 10
 ```
+## If Else statements:
+
+Works like any other language if(condition) {code}
+```
+if (condition) {
+ code..
+} else {
+ code
+}
+or
+if (true)
+ System.out.println("Some bla bla")
+
+```
+## Methods:
+
+* You can't put a method inside another method
+
+```
+public static void calculateScore (args) {
+ code...
+}
+```
+
+Example:
+```
+public class Main {
+
+    public static void main(String[] args) {
+       	// write your code here
+        saySomething("Aloha amigos");
+    }
+
+    public static void saySomething (String someText) {
+        System.out.println(someText);
+    }
+}
+
+```
