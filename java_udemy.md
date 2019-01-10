@@ -122,3 +122,30 @@ public static int calculateScore(int score) {
 	return  score * 1000;
 }
 ```
+
+## Control Flow Statements:
+
+- Switch statement:
+```
+Switch(option) {
+	case <option1>:
+		..code block..
+		break;
+		
+	case <option2>:
+		..code block..
+		break;
+	default: // cover all other cases
+		..code block..
+		break;
+	...
+}	
+```
+
+- For loop statement:
+```
+for(init; Stopcondition; increment) {
+	..codeblock..
+}
+```
+
