@@ -81,6 +81,8 @@ todo
 
 ### Funções agregadoras:
 
+## Subqueries:
+
 
 
 ## Palavras-Chave
