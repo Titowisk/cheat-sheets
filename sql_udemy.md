@@ -67,6 +67,14 @@ todo
 
 - criar e apagar view:
 
+### Order by:
+
+### Delimitador e Estado do servidor:
+
+
+## Procedures - Procedimentos Armazenados:
+
+
 
 
 ## Palavras-Chave
