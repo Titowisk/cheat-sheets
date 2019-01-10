@@ -75,6 +75,12 @@ todo
 ## Procedures - Procedimentos Armazenados:
 
 
+### Procedures com parâmetros:
+
+### Procedures com tabelas:
+
+### Funções agregadoras:
+
 
 
 ## Palavras-Chave
