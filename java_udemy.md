@@ -149,3 +149,38 @@ for(init; Stopcondition; increment) {
 }
 ```
 
+- While loop statement:
+
+runs 0 or more times.
+```
+while(condition) {
+	..code block..
+}
+```
+
+runs 1 or more times.
+```
+do {
+	..code block..
+}while (condition);
+```
+
+*continue;
+It skips to the next iteration on the loop (ignoring the rest of the code below).
+```
+int count = 0;
+while (count < 7){
+
+	if (count == 3){
+		count += 1;
+		continue;
+	}
+	System.out.println(count);
+	count += 1;
+}
+Output: 0 1 2 _ 4 5 6
+```
+
+- parsing values from strings:
+
+
