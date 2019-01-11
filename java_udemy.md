@@ -182,5 +182,8 @@ Output: 0 1 2 _ 4 5 6
 ```
 
 - parsing values from strings:
-
+```
+Integer.parseInt(<string>);
+Double.parseDouble(<string>);
+```
 
