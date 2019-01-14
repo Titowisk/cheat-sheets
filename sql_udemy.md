@@ -291,6 +291,14 @@ SELECT NOME, JANEIRO, FEVEREIRO, MARCO,
 SHOW CREATE TABLE <NOME_DA_TABELA>
 ```
 
+## Organização de chaves:
+Quando uma FK é criada, o BD cria, automaticamente, uma CONSTRAINT que representa esse relacionamento. Porém
+o melhor é criar isso manualmente para organizar melhor.
+
+É uma boa prática, criar as tabelas e depois criar as CONSTRAINTS.
+
+-- Como criar CONSTRAINTS:
+
 
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
