@@ -282,6 +282,16 @@ SELECT NOME, JANEIRO, FEVEREIRO, MARCO,
     FROM VENDEDORES;
 ```
 
+## Alterar Tabelas:
+ É possível adicionar colunas, alterar tipos, adicionar PK ou FK, renomear tabela...
+ (melhor pesquisar a sintaxe do que botar todas as opções aqui)
+
+- Mostrar detalhes da tabela criada:
+```
+SHOW CREATE TABLE <NOME_DA_TABELA>
+```
+
+
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
 
