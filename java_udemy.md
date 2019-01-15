@@ -187,3 +187,36 @@ Integer.parseInt(<string>);
 Double.parseDouble(<string>);
 ```
 
+## Reading user input:
+
+To read it, I must use the Scanner class (and close it after using it)
+
+```
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Enter your year of birthday: ");
+int yearOfBirth = scanner.nextInt();
+
+scanner.close();
+```
+
+* To read user input twice, I have to add another.scannernextLine to capture the 'enter key':
+```
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Enter your year of birthday: ");
+int yearOfBirth = scanner.nextInt();
+scanner.nextLine(); // handle next line character (enter key)
+
+System.out.println("Enter yout name: ");
+String name = scanner.nextLine();
+
+int age = 2019 - yearOfBirth;
+
+System.out.println( String.format("Your name is: %s and you are %d years old.", name, age) );
+
+scanner.close();
+```
+
+
+
