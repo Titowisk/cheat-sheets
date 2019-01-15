@@ -299,6 +299,14 @@ o melhor é criar isso manualmente para organizar melhor.
 
 -- Como criar CONSTRAINTS:
 
+## Triggers:
+
+- Estrutura de uma trigger:
+
+- Trabalhar com tabelas de diferentes databases:
+
+*Dica: cuidado com after e before em uma trigger de insert
+
 
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
