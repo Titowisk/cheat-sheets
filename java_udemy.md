@@ -248,3 +248,23 @@ public class Car {
 
 *DICA: No intellij para gerar getters and setters é só ir em Code>Generate e escolher a opção desejada.
 
+### Constructors:
+
+```
+public BankAccount() {
+	// empty constructor
+	
+	// constructor with default values
+	// it calls the constructor with parameters giving it the default values specified
+        this("46879", 0.0, "Default", "blabla@gmail.com", "99565726"); // must be the first statement in the empty constructor
+}
+
+public BankAccount(String number, double balance, String customer, String email, String phone) {
+	// constructor with parameters
+	this.number = number;
+	this.balance = balance;
+	this.customer = customer;
+	this.email = email;
+	this.phone = phone;
+}
+```
