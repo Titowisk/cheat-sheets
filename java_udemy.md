@@ -218,5 +218,33 @@ System.out.println( String.format("Your name is: %s and you are %d years old.", 
 scanner.close();
 ```
 
+## OO - parte 1:
 
+Classes podem comunicar entre si se pertencerem a um mesmo pacote/package (pasta)
+Ou se forem explicitamente importadas.
+
+Para poderem compartilhar métodos e variáveis, é preciso gerenciar os acessos de acordo (public, private...)
+
+```
+package com.Learning;
+
+public class Car {
+
+    private int doors;
+    private int whells;
+    private String model;
+    private String engine;
+    private String color;
+
+    public void setModel (String model){
+        this.model = model;
+    }
+
+    public String getModel(){
+        return this.model;
+    }
+}
+```
+
+*DICA: No intellij para gerar getters and setters é só ir em Code>Generate e escolher a opção desejada.
 
