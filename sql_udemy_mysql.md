@@ -312,6 +312,9 @@ o melhor é criar isso manualmente para organizar melhor.
 ## Autorelacionamento:
 
 
+## Cursores:
+
+
 
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
