@@ -268,3 +268,6 @@ public BankAccount(String number, double balance, String customer, String email,
 	this.phone = phone;
 }
 ```
+
+*DICA: em constructors com parâmetros, é melhor inicializar as variáveis com o this. Se utilizar
+os setters eles podem não funcionar em contexto de herança (super e sub classes).
