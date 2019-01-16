@@ -307,6 +307,11 @@ o melhor é criar isso manualmente para organizar melhor.
 
 *Dica: cuidado com after e before em uma trigger de insert
 
+- Sugestão de trigger: auditoria
+
+## Autorelacionamento:
+
+
 
 ## Palavras-Chave
 - SGBD - Sistema de Gerenciamento de Banco de Dados
