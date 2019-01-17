@@ -311,3 +311,48 @@ public void walk(){
     }
 ```
 
+### Reference x Object x Instance x Class:
+Class = blueprint;
+Instance = house you built using the blueprint. It is an object as well;
+Object = instantiating a class means that I created an instance or object from that class;
+Reference = the address of each individual house built
+
+### super x this:
+super is used to call the parent's class members (variables and methods)
+this is used to call the current's class variables and methods
+
+*they can't be used in static areas.
+
+In the constructor the java compiler calls super() even if we don't declare it.
+The super() call must be the first one inside a constructor().
+The constructor can never have both super() and this() calls inside it.
+
+*Dica: ao usar um construtor com valores default, deve-se usar o this();
+```
+class Rectangle {
+	private int x;
+	private int y;
+	private int height;
+	private int width;
+	
+	
+	Rectangle (){
+		this(0, 0, 0, 0); // calls 2nd constructor
+		this.x = 0; // DONT
+		this.y = 0: // DONT
+	}
+	
+	Rectangle(int height, int width){
+		this(0, 0, height, width); // calls 3nd constructor
+	}
+	
+	
+	Rectangle(intx, int y, int height, int width){
+	// initalizes the variables
+		this.x = x;
+		this.y = y;
+		this.height = height;
+		this.width = width;
+	}
+}
+```
