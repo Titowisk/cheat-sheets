@@ -328,6 +328,8 @@ The super() call must be the first one inside a constructor().
 The constructor can never have both super() and this() calls inside it.
 
 *Dica: ao usar um construtor com valores default, deve-se usar o this();
+
+- COnstructor chainning to avoid duplication of code:
 ```
 class Rectangle {
 	private int x;
@@ -356,3 +358,11 @@ class Rectangle {
 	}
 }
 ```
+
+### Overloading x Overriding:
+
+Overloading = two or more methods with the same name but different paremeters
+Overriding: = define a method in a child class that already exists on the parent class (same parameters)
+
+
+
