@@ -364,5 +364,6 @@ class Rectangle {
 Overloading = two or more methods with the same name but different paremeters
 Overriding: = define a method in a child class that already exists on the parent class (same parameters)
 
-
+### Static methods:
+They are used to perfom actions that doesn't need any data from instances of the class.
 
