@@ -271,3 +271,43 @@ public BankAccount(String number, double balance, String customer, String email,
 
 *DICA: em constructors com parâmetros, é melhor inicializar as variáveis com o this. Se utilizar
 os setters eles podem não funcionar em contexto de herança (super e sub classes).
+
+### Method Overriding:
+A sub class can overrride a method inherited from a class.
+
+Animal class:
+```
+public void eat(){
+        System.out.println("Animal.eat called");
+}
+```
+    
+Dog class:
+```
+
+@Override
+public void eat() {
+	System.out.println("Dog.eat called");
+	chew();
+	super.eat();
+}
+```
+
+*Dica: quando usar a herança de método, é melhor chamar o método sem o ```super.```, pois caso 
+a subclasse necessite sobrepor o método da super classe, o código muda automaticamente do método da super classe
+para o método da subclasse.
+
+Animal class:
+```
+public void move(int speed){
+        System.out.println("Animal.move called. Speed = " + speed);
+    }
+```
+Dog class:
+```
+public void walk(){
+        System.out.println("Dog.walk() called.");
+        move(5); // better then super
+    }
+```
+
