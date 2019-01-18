@@ -367,3 +367,28 @@ Overriding: = define a method in a child class that already exists on the parent
 ### Static methods:
 They are used to perfom actions that doesn't need any data from instances of the class.
 
+## OO - parte 2 (composition, polymorphism and encapsulation):
+
+- Composition:
+Happens when a class has another class.
+A car is a type of vehicle, I can't say vehicle has a car.
+A resolution is part of the caracteristics of a monitor. A monitor HAS a resoltuion.
+
+Example:
+```
+public class Monitor {
+	private String model;
+	private String manufacturer;
+	private Resolution nativeResolution; // Monitor has a variable of the type Resolution
+}
+
+public class Resolution {
+	private int width;
+	private int height;
+}
+```
+
+- Encapsulation:
+Restrict the access (public -> private) to variables and methods to assure more control with validantions.
+
+
