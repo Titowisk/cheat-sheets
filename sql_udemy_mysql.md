@@ -310,9 +310,60 @@ o melhor é criar isso manualmente para organizar melhor.
 - Sugestão de trigger: auditoria
 
 ## Autorelacionamento:
+Quando a tabela se relaciona consigo:
+```
+CREATE TABLE CURSOS (
+    ID_CURSO INT PRIMARY KEY AUTO_INCREMENT,
+    NOME VARCHAR(30),
+    HORAS INT,
+    VALOR FLOAT(10,2),
+    IDK_PREREQ INT
+);
 
+ALTER TABLE CURSOS ADD CONSTRAINT FK_PREREQ
+FOREIGN KEY(IDK_PREREQ) REFERENCES CURSOS(ID_CURSO);
+```
+No caso, a chave primária de CURSOS serve como FK dela mesma.
 
 ## Cursores:
+Cursor é um vetor [].
+Pode-se utilizar-lo com iteração para gerar novas tabelas com cálculos:
+```
+CREATE PROCEDURE INSEREDADOS()
+BEGIN
+    DECLARE FIM INT DEFAULT 0;
+    DECLARE VAR1, VAR2, VAR3, VTOTAL, VMEDIA INT;
+    DECLARE VNOME VARCHAR(50);
+
+    DECLARE REG CURSOR FOR(
+        SELECT NOME, JAN, FEV, MAR FROM VENDEDORES
+    );
+    
+
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET FIM = 1;
+
+    OPEN REG;
+
+    REPEAT
+        FETCH REG INTO VNOME, VAR1, VAR2, VAR3;
+        IF NOT FIM THEN
+            SET VTOTAL = VAR1 + VAR2 + VAR3;
+            SET VMEDIA = VTOTAL / 3;
+            DELETE FROM VEND_TOTAL WHERE NOME = VNOME;
+            INSERT INTO VEND_TOTAL VALUES(VNOME, VAR1, VAR2, VAR3, VTOTAL, VMEDIA);
+        END IF;
+    UNTIL FIM END REPEAT;
+
+    CLOSE REG;
+
+END
+$
+```
+Ela então pega a tabela VENDEDORES, itera sobre suas linhas e cria um Total e uma Média para cada linha.
+- REG = [(nome, jan, fev, mar), (nome, jan, fev, mar), (nome, jan, fev, mar)...]
+- REG É ARMAZENADO NA MEMÓRIA RAM.
+- REG DEVE SER FECHADO APÓS SUA UTILIZAÇÃO PARA LIBERAR ESPAÇO NA MEMÓRIA
+
 
 ## Segunda e Terceira forma nominal:
 
