@@ -391,4 +391,37 @@ public class Resolution {
 - Encapsulation:
 Restrict the access (public -> private) to variables and methods to assure more control with validantions.
 
+- Polymorphism:
+Is achieved using overloading and overrrinding (giving different functionalities to the same method name inside the same scope or across different classes).
+
+*Upcasting
+```
+class A{}
+class B extends A {}
+
+A var = new B(); // upcasting
+```
+
+Polymorphism example:
+
+```
+class Movie {
+	public String plot(){
+		System.out.print("No plot here");
+	}
+}
+
+class Jaws extends Movie{
+	@Override
+	public String plot() {
+		System.out.print("A shark kills lots of people");
+	}
+}
+
+// Inside Main
+
+Movie movie = new Jaws(); // upcasting
+movie.plot(); // <-polymorphism | prints: A shark kills lots of people
+```
+
 
