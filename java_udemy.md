@@ -424,4 +424,29 @@ Movie movie = new Jaws(); // upcasting
 movie.plot(); // <-polymorphism | prints: A shark kills lots of people
 ```
 
+## Arrays:
+
+- How to create
+```
+// Option 1
+int[] myIntArray = new int[10]; // creates an empty array with 10 spaces (0-9)
+
+// option 2
+int[] myIntArray2 = {1,2,3,4,5,6,7,8,9} // creates an array with the determined numbers
+```
+
+- To assign values I should use the brackets notation (like in the others languages)
+
+- declaring as a function parameter:
+
+```
+// declaring
+public static void someMethod (int[] myArray) {
+	..code..
+}
+
+// calling
+int[] array = {1,2,3,4}
+someMethod(array);
+```
 
