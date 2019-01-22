@@ -464,6 +464,10 @@ int[] anotherArray = myArray; // this copy the ADDRESS of the array and assign i
 // both myArray and anotherArray holds the same address to the array created with 'new'.
 ```
 
+## Lists and ArrayLists
+- ArrayLists
+https://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html
+É um built-in do java que já possui métodos para facilitar o trabalho com Listas
 
 
 
