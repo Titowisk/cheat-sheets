@@ -450,3 +450,20 @@ int[] array = {1,2,3,4}
 someMethod(array);
 ```
 
+## References Types x Values Types:
+
+Variables holds the object of values types, but holds the address in memory of references types.
+
+```
+int myInt = 10;
+int anotherInt = myInt; // copy the object 10 to another variable;
+// myInt and anotherInt references two different objects with the same value of 10
+
+int[] myArray = new int[5]; // my array holds the address to the Array of lenght 5
+int[] anotherArray = myArray; // this copy the ADDRESS of the array and assign it to the anotherArray
+// both myArray and anotherArray holds the same address to the array created with 'new'.
+```
+
+
+
+
