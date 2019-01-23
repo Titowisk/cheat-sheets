@@ -495,7 +495,14 @@ int primitiveInt = myint; // compilador java faz automaticamente myint.intValue(
 ## Linked Lists:
 Linked lists have an advantage over Arrays, because insertions and removals can be done a lot easier.
 When I insert/delete a element in the middle of an Array, I have to move down/up all the other records, but in LinkedLists that is not necessary because the list is made of pointers (remember UNIFACS C classes).
-```
 
 ```
+LinkedList<classType> linkedLst = new LinkedList<classType>();
+```
+
+- Iterator x ListIterator:
+https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html
+
+Iterator goes only foward: hasNext() and next()
+ListIterator goes both ways: hasNext(), hasPrevious(), next(), previous()
 
