@@ -468,6 +468,28 @@ int[] anotherArray = myArray; // this copy the ADDRESS of the array and assign i
 - ArrayLists
 https://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html
 É um built-in do java que já possui métodos para facilitar o trabalho com Listas
+```
+private ArrayList<String> text = new ArrayList<String>();
+```
 
+- AutoBoxing:
+Quando um método necessita de um objeto classe, mas precisamos utilizar tipos primitivos, nós utilizamos wrappers built in do java.
+
+Exemplo:
+```
+private ArrayList<Int> integerList = new ArrayList<Int>(); // não funciona, pois ArrayList<> necessita de uma classe
+
+private ArrayList<Integer> integerList = new ArrayList<Integer>(); // Integer é uma classe wrapper para utilizar tipos primitivos como objetos classe.
+
+integerList.add(Integer.valueOf(10)); // transformei o valor 10 de int para Integer (autoboxing)
+
+integerList.get(0).intValue(); // transformei o valor armazenado de Integer para int (unboxing)
+```
+
+Atalho para Unboxing e Autoboxing:
+```
+Integer myInt = 56; // Java faz isso automaticamente durante a compilação Integer.valueOf(56)
+int primitiveInt = myint; // compilador java faz automaticamente myint.intValue();
+```
 
 
