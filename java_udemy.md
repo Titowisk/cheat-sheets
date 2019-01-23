@@ -492,4 +492,10 @@ Integer myInt = 56; // Java faz isso automaticamente durante a compilação Inte
 int primitiveInt = myint; // compilador java faz automaticamente myint.intValue();
 ```
 
+## Linked Lists:
+Linked lists have an advantage over Arrays, because insertions and removals can be done a lot easier.
+When I insert/delete a element in the middle of an Array, I have to move down/up all the other records, but in LinkedLists that is not necessary because the list is made of pointers (remember UNIFACS C classes).
+```
+
+```
 
