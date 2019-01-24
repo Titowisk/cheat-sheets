@@ -506,3 +506,31 @@ https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html
 Iterator goes only foward: hasNext() and next()
 ListIterator goes both ways: hasNext(), hasPrevious(), next(), previous()
 
+## Interfaces:
+To build a interface is like doing a contract about the methods and types you are going to use. It is to promise they won't change, and so it won't break other dependencies.
+More then one class can implement the same interface
+
+new > interface (instead of class)
+```
+public interface ITelephone {
+	int someMethod();
+	void anotherMethod(String var);
+}
+
+public class DeskPhone implements ITelephone {
+	// must implement the methods in ITelephone or a error will be thrown
+	
+	public int someMethod(){
+		// ... code...
+	}
+	
+	private void anotherMethod(String var){
+		// ..code..
+	}
+}
+
+// calling
+
+ITelephone deskphone = new DeskPhone();
+```
+
