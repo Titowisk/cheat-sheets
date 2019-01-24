@@ -307,7 +307,7 @@ Dog class:
 ```
 public void walk(){
         System.out.println("Dog.walk() called.");
-        move(5); // better then super
+        move(5); // better than super
     }
 ```
 
@@ -508,7 +508,7 @@ ListIterator goes both ways: hasNext(), hasPrevious(), next(), previous()
 
 ## Interfaces:
 To build a interface is like doing a contract about the methods and types you are going to use. It is to promise they won't change, and so it won't break other dependencies.
-More then one class can implement the same interface
+More than one class can implement the same interface
 
 new > interface (instead of class)
 ```
@@ -534,3 +534,18 @@ public class DeskPhone implements ITelephone {
 ITelephone deskphone = new DeskPhone();
 ```
 
+* A class can implement several different interfaces but cannot inherit from more than one class
+
+
+## Inner Classes:
+Classes built inside other classes.
+
+```
+public class GearBox {
+
+	public class Gear {}
+}
+
+GearBox mclaren = new GearBox(); // create outer class
+GearBox.Gear first = mclaren.new Gear(); // create inner class
+```
