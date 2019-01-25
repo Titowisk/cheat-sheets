@@ -536,6 +536,43 @@ ITelephone deskphone = new DeskPhone();
 
 * A class can implement several different interfaces but cannot inherit from more than one class
 
+## Abstract Classes:
+Abstract classes can define access, constructors and methods (empty) that other classes can inherit.
+
+* If Dog is a Animal, Animal should probably be a Abstract Class
+
+```
+public abstract class Animal {
+	private String name;
+	
+	public Animal(String name){
+		this.name = name;
+	}
+	
+	public abstract void eat();
+	public abstract void breathe();
+	
+	public void String getName(){
+		return this.name;
+	}
+}
+
+public class Dog extends Animal {
+	public Dog(String name){
+		super(name);
+	}
+	
+	@Override
+	public void eat(){
+		System.out.println(getName() + "is eating.");
+	}
+	
+	@Override
+	public void breathe(){
+		System.out.println("Breathe in, breathe out, repeat.");
+	};
+}
+```
 
 ## Inner Classes:
 Classes built inside other classes.
@@ -548,4 +585,43 @@ public class GearBox {
 
 GearBox mclaren = new GearBox(); // create outer class
 GearBox.Gear first = mclaren.new Gear(); // create inner class
+```
+
+- Local Classes:
+Are classes defined inside a scope (method or if statement)
+```
+public static void main(String[] args) {
+
+// ------------------ LOCAL CLASS ------------------------
+//        class ClickListener implements Button.OnClickListener {
+//            public ClickListener() {
+//                System.out.println("I've been attached");
+//            }
+//
+//            @Override
+//            public void onClick(String title) {
+//                System.out.println(title + " was clicked");
+//            }
+//        }
+//
+//        btnPrint.setOnClickListener(new ClickListener());
+
+// ------------------ ANONYMOUS CLASS ------------------------------
+        btnPrint.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(String title) {
+                System.out.println(title + " was clicked");
+            }
+        });
+        listen();
+    }
+```
+
+* Comentário do Instrutor sobre Inner Classes
+```
+Hi,
+
+i personally tend to avoid inner classes as much as i can mainly because you never know when you will need it outside. If it is really small class then i put it in special file but with package protected access, that way when i have to refactor i just add public. With inner class i would have to move it to another file, if it is public then it is too long to type e.g. Button.IClickListener.
+
+Cheers.
 ```
