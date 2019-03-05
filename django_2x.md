@@ -32,7 +32,7 @@ executa as alterações
 ### Class-based-views
 https://ccbv.co.uk/ um site que facilita ver toda a árvore de classes com seus atributos e métodos
 
-class FormView(forms.Form):
+- class FormView(forms.Form):
 
 Cada field do forms.Form possuem widgets (código HTML) de formulários web.
 
@@ -84,6 +84,7 @@ class ReadFilesView(FormView):
 ```
 Informações enviadas por POST ficam em request.POST (um dicionário).
 No caso de arquivos é request.FILES.
+
 !!!
 Quando a página é acessada, ele cai no caso do ```.form_invalid(form)```
 ```
@@ -94,3 +95,4 @@ def form_invalid(self, form):
 que pega o código HTML gerado pelo ```UploadFileForm``` para criar o 
 formulário-ligado na página em questão.
 !!!
+
