@@ -96,3 +96,6 @@ que pega o código HTML gerado pelo ```UploadFileForm``` para criar o
 formulário-ligado na página em questão.
 !!!
 
+# Exceptions
+É possível lidar com exceções criadas pelo Django importando elas de django.core.exceptions.
+https://docs.djangoproject.com/en/2.1/ref/exceptions/
