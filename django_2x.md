@@ -19,6 +19,7 @@ contém os templates, assets, views, models de cada app criado
 ### Ao criar um app:
 - É preciso registra-lo em settings.INSTALLED_APPS
 - criar as pastas de templates/ e static/ (caso necessite)
+- criar o arquivo urls.py
 
 ## Shell
 ```
