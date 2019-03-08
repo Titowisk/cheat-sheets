@@ -7,10 +7,18 @@ django-admin startproject <project_name> [/path/to/project]
 
 cria o manage.py + pasta central do projeto /project_name/
 contem as urls principais do projeto, settings.py, ...
+### Ao criar um projeto deve-se:
+- fazer isso
+- fazer aquilo
+- ...
 ```
 django-admin startapp <project_name> [/path/to/project]
 ```
 contém os templates, assets, views, models de cada app criado
+
+### Ao criar um app:
+- É preciso registra-lo em settings.INSTALLED_APPS
+- criar as pastas de templates/ e static/ (caso necessite)
 
 ## Shell
 ```
