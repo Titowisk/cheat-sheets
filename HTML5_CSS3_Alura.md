@@ -24,3 +24,17 @@ Com isso, podemos colocar todos os prefixos no código para testar em todos os n
 border-radius: 10px;
 ```
 Desse modo, seu site funciona no presente e fica Future Proof, para quando as funcionalidades não mais estiverem em BETA.
+
+## Pseudo-classes e pseudo-elementos:
+São classes e elementos que o próprio navegador já cria automaticamente e que podemos estilizar direto com o CSS.
+
+Ex:
+```
+/* pseudo-classes */
+p:nth-child(odd)
+
+td.nth-child(2n+1)
+
+/* pseudo-elementos */
+h1:first-letter
+```
