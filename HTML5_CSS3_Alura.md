@@ -38,3 +38,21 @@ td.nth-child(2n+1)
 /* pseudo-elementos */
 h1:first-letter
 ```
+
+### ::before e ::after
+
+É como se todo elemento do HTML tivesse um <span></span> invisível, logo no início e logo no final
+```
+<blockquote>
+  <span></span> // invisivel ::before
+  ...
+  conteudo
+  ...
+  <span<</span> // invisivel ::after
+```
+```
+blockquote::before {
+  content: 'a' // insere a letra no span invisivel
+ }
+```
+
