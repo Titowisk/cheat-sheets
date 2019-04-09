@@ -35,3 +35,11 @@ string lista_cursos2 =
 int idade = 20;
 string frase = $"Minha idade é {idade}";
 ```
+## If loop
+Mesmo do Java if () {}
+Mas pode ser usado assim:
+```
+Se a condição é verdade, executa a primeira expressão após o if
+if (condition)
+  expression
+```
