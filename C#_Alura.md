@@ -59,3 +59,17 @@ switch (variavelASerTestada) {
             comando(s) caso nenhuma das opções anteriores tenha sido escolhida
 }
 ```
+## Classes
+
+```
+public class ContaCorrente
+{
+    public string titular;
+    public int agencia;
+    public int numero;
+    public double saldo;
+}
+```
+Esses atributos já possuem valores default no CSharp. 
+Tipo int por exemplo é 0, assim como double.
+Tipo boolean é false
