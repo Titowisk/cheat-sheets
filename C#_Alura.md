@@ -12,3 +12,11 @@ Com as alterações, ficamos com a seguinte ordenação das camadas.
 - CLR - Common Language Runtime (Máquina Virtual)
 - Sistemas Operacionais: Windows | Linux | ...
 
+## Tipos e Conversões
+
+- C# é uma linguagem de tipagem forte (similar ao java)
+- Double, Int, Float, char...
+- A conversão é implícita quando se faz de um tipo menor para um maior:
+Ex: int para double
+
+* **Aspas simples '' são para caracteres, aspas duplas "" são para textos**
