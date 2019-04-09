@@ -30,3 +30,8 @@ string lista_cursos2 =
 - Python
 ";
 ```
+- Tipo string possui uma sinaxe para inserção de variáveis no texto **($"... {} ...")**:
+```
+int idade = 20;
+string frase = $"Minha idade é {idade}";
+```
