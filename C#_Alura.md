@@ -15,8 +15,18 @@ Com as alterações, ficamos com a seguinte ordenação das camadas.
 ## Tipos e Conversões
 
 - C# é uma linguagem de tipagem forte (similar ao java)
-- Double, Int, Float, char...
+- double, int, float, char, string...
 - A conversão é implícita quando se faz de um tipo menor para um maior:
 Ex: int para double
 
 * **Aspas simples '' são para caracteres, aspas duplas "" são para textos**
+- Tipo string permite multilinhas se colocar @"";
+Ex:
+```
+string lista_cursos2 = 
+@"
+- .Net
+- Java
+- Python
+";
+```
