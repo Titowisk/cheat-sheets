@@ -74,7 +74,7 @@ Esses atributos já possuem valores default no CSharp.
 Tipo int por exemplo é 0, assim como double.
 Tipo boolean é false
 
-## Métodos:
+### Métodos:
 ```
 public class ContaCorrente
 {
@@ -96,5 +96,37 @@ public class ContaCorrente
             return true;
         }
     }
+}
+```
+
+### Namespaces:
+Serve para definir um conjunto de classes sendo utilizadas:
+Ex:
+```
+// Solution: ByteBank
+// Projeto: 05-ByteBank
+// arquivo-classe: Cliente.cs
+namespace _05_ByteBank
+{
+    class Cliente
+    {
+    }
+}
+```
+
+```
+// Solution: ByteBank
+// Projeto: 05-ByteBank
+// arquivo-classe: ContaCorrente.cs
+
+using _05_ByteBank;
+
+public class ContaCorrente
+{
+    public Cliente ...;
+    public int agencia;
+    public int numero;
+    public double saldo;
+...
 }
 ```
