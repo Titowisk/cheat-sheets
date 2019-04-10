@@ -108,7 +108,7 @@ Ex:
 // arquivo-classe: Cliente.cs
 namespace _05_ByteBank
 {
-    class Cliente
+    public class Cliente
     {
     }
 }
