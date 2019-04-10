@@ -130,3 +130,26 @@ public class ContaCorrente
 ...
 }
 ```
+
+### Getters and Setters:
+No C# pode-se contruir-los manualente, ou utilizando atalhos:
+```
+private string _name
+// getter
+public string getName () {return name}
+// ou
+get {return _name}
+
+// setter
+public void setName (name) {return _name = name}
+// ou
+set 
+{
+  _name = value; // value é uma palavra reservada
+}
+
+// getter and setter
+private string Name {get; set;} // primeira letra maiúscula
+```
+* _<property_name> é uma convenção para propriedades/atributos privados da classe.
+* digitar prop me dá um snippet para criação de propriedades
