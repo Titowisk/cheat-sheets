@@ -153,3 +153,26 @@ private string Name {get; set;} // primeira letra maiúscula
 ```
 * _<property_name> é uma convenção para propriedades/atributos privados da classe.
 * digitar prop me dá um snippet para criação de propriedades
+
+### Contructors
+```
+public ContaCorrente(int agencia, int numero)
+{
+    // força a atribuição de valores às propriedades determinadas.
+    Agencia = agencia;
+    Numero = numero;
+}
+```
+
+
+### Static Methods and Properties:
+São acessadas pelo nome da classe, inclusive dentro de seu próprio contexto.
+```
+ContaCorrente.TotalDeContasCriadas;
+```
+Propriedades podem ser estáticas e seus getters and setters privados
+```
+// É permitido pegar o valor de TotalDeContasCriadas fora do contexto da classe
+// mas não é permitido atribuir valor a ela fora do contexto da classe
+public static int TotalDeContasCriadas { get; private set; }
+```
