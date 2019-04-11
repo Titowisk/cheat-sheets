@@ -228,3 +228,7 @@ public override double GetBonificacao()
     return Salario;
 }
 ```
+### protected
+Permite tornar um atributo/propriedade/método, exclusivo do contexto de classes pai e filhas.
+O "private" torna um atriuto/propriedade/método exclusivo somente para um contexto.
+O "protected" permite seu uso a toda hierarquia de heranças de classes.
