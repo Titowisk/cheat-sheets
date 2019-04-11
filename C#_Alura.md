@@ -163,6 +163,25 @@ public ContaCorrente(int agencia, int numero)
 }
 ```
 
+Para usar construtores com parâmetros ao longo de classes com herança:
+```
+// classe pai Funcionario
+public Funcionario(string cpf)
+{
+    Console.WriteLine("Criando FUNCIONARIO");
+
+    CPF = cpf;
+
+    TotalDeFuncionarios ++;
+}
+
+// classe filha Diretor
+public Diretor(string cpf) : base(cpf) 
+{
+...
+}
+```
+
 
 ### Static Methods and Properties:
 São acessadas pelo nome da classe, inclusive dentro de seu próprio contexto.
