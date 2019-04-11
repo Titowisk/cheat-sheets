@@ -175,6 +175,21 @@ Propriedades podem ser estáticas e seus getters and setters privados
 // mas não é permitido atribuir valor a ela fora do contexto da classe
 public static int TotalDeContasCriadas { get; private set; }
 ```
+### Herança:
+A notação ```classe filha : classe pai``` indica a herança.
+A palavra reservada ```base``` permite acessar recursos da classe pai, dentro do contexto da classe filha.
+
+EX:
+```
+public class Diretor : Funcionario
+    {
+        public override double GetBonificacao()
+        {
+            return Salario + base.GetBonificacao();
+        }
+    }
+```
+
 ### Overriding and Overloading:
 O overloading é apenas duas funções com nomes iguais mas parâmetros diferentes.
 
