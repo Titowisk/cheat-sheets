@@ -101,9 +101,8 @@ public class ContaCorrente
 
 ### Namespaces:
 Serve para definir um conjunto de classes sendo utilizadas:
-Ex:
+Ex: Usar a classe Cliente dentro da classe ContaCorrente
 ```
-// Solution: ByteBank
 // Projeto: 05-ByteBank
 // arquivo-classe: Cliente.cs
 namespace _05_ByteBank
@@ -115,7 +114,6 @@ namespace _05_ByteBank
 ```
 
 ```
-// Solution: ByteBank
 // Projeto: 05-ByteBank
 // arquivo-classe: ContaCorrente.cs
 
@@ -123,13 +121,14 @@ using _05_ByteBank;
 
 public class ContaCorrente
 {
-    public Cliente ...;
+    public Cliente titular;
     public int agencia;
     public int numero;
     public double saldo;
 ...
 }
 ```
+Se a classe for criada dentro de uma pasta, o namespace deve incorporar o nome dessa pasta tb
 
 ### Getters and Setters:
 No C# pode-se contruir-los manualente, ou utilizando atalhos:
