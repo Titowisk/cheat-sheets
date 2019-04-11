@@ -175,3 +175,22 @@ Propriedades podem ser estáticas e seus getters and setters privados
 // mas não é permitido atribuir valor a ela fora do contexto da classe
 public static int TotalDeContasCriadas { get; private set; }
 ```
+### Overriding and Overloading:
+O overloading é apenas duas funções com nomes iguais mas parâmetros diferentes.
+
+Mas no caso do overriding, o método da classe pai precisa receber a palavra reservada
+```virtual``` e o método da classe filha precisa receber a palavra reservada ```override```.
+Ex:
+```
+// classe pai
+public virtual double GetBonificacao()
+{
+    return Salario * 0.10;
+}
+
+// classe filha
+public override double GetBonificacao()
+{
+    return Salario;
+}
+```
