@@ -232,3 +232,9 @@ public override double GetBonificacao()
 Permite tornar um atributo/propriedade/método, exclusivo do contexto de classes pai e filhas.
 O "private" torna um atriuto/propriedade/método exclusivo somente para um contexto.
 O "protected" permite seu uso a toda hierarquia de heranças de classes.
+
+## Classes Abstratas
+Torna uma classe não instânciável, pois ela serve apenas de molde para suas classes filhas
+
+### Métodos Abstratos:
+Força a nível de compilação, que as classes filhas implementem os métodos herdados da classe abstrata pai.
