@@ -259,4 +259,11 @@ catch(exception someVar)
   Console.WriteLine(someVar.Message); // imprime mensagem de erro da exceção
   Console.WriteLine(someVar.StackTrace); // imprime Call Stack do erro da exceção
 }
+catch(exception2 someVar)
+{
+  // some code
+  Console.WriteLine(someVar.Message); // imprime mensagem de erro da exceção
+  Console.WriteLine(someVar.StackTrace); // imprime Call Stack do erro da exceção
+}
+...
 ```
