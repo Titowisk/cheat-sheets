@@ -238,3 +238,23 @@ Torna uma classe não instânciável, pois ela serve apenas de molde para suas c
 
 ### Métodos Abstratos:
 Força a nível de compilação, que as classes filhas implementem os métodos herdados da classe abstrata pai.
+
+## Herança Multipla:
+Herança múltipla não é permitido em C#. No caso são utilizados Interfaces
+
+- Uma classe só pode herdar uma única classe, mas pode herdar diversas interfaces;
+- Classes abstratas podem ter implementações (de métodos de uma interface por exemplo);
+- Interfaces não podem ter implementações;
+
+## Exceptions:
+O c# possui a seguinte sintaxe para capturar/lidar com exceções:
+```
+try
+{
+  // some code
+}
+catch(exception)
+{
+  // some code
+}
+```
