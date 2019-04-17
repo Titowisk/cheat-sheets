@@ -152,6 +152,24 @@ private string Name {get; set;} // primeira letra maiúscula
 ```
 * _<property_name> é uma convenção para propriedades/atributos privados da classe.
 * digitar prop me dá um snippet para criação de propriedades
+* Atributo **readOnly**:
+A construção abaixo torna o atributo Numero readOnly, isso significa que ele só pode ser 'setado' uma única vez
+no construtor.
+```
+// Classe ContaCorrente
+public int Numero { get }
+```
+Equivalente a:
+```
+private readonly int _numero;
+public int Numero 
+  {
+      get
+      {
+          return _numero;
+      }
+  }
+```
 
 ### Contructors
 ```
@@ -258,12 +276,14 @@ catch(exception someVar)
   // some code
   Console.WriteLine(someVar.Message); // imprime mensagem de erro da exceção
   Console.WriteLine(someVar.StackTrace); // imprime Call Stack do erro da exceção
+  throw; // palavra reservada do C# para lançar erro/exceção
 }
 catch(exception2 someVar)
 {
   // some code
   Console.WriteLine(someVar.Message); // imprime mensagem de erro da exceção
   Console.WriteLine(someVar.StackTrace); // imprime Call Stack do erro da exceção
+  throw; // palavra reservada do C# para lançar erro/exceção
 }
 ...
 ```
