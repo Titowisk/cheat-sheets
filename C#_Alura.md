@@ -287,6 +287,8 @@ catch(exception2 someVar)
 }
 ...
 ```
+**Obs:** `throw;` sem parâmetro (throw exception; por exemplo), preserva o `StackTrace` do erro.
+
 ### Exceções Customizadas (altera exceções existentes)
 Posso criar exceções customizadas, ArgumentException permite a customização de mensagem e do parâmetro utilizado:
 ```
@@ -302,7 +304,7 @@ public ContaCorrente(int agencia, int numero)
         TotalDeContasCriadas++;
     }
 ```
-*nameof() retorna o nome de um atributo como string
+**Obs:** `nameof()` retorna o nome de um atributo como string
 
 ### Criação de exceções (cria exceções novas):
 
