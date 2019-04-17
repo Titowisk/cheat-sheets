@@ -287,7 +287,8 @@ catch(exception2 someVar)
 }
 ...
 ```
-Posso criar exceções customizadas:
+### Exceções Customizadas (altera exceções existentes)
+Posso criar exceções customizadas, ArgumentException permite a customização de mensagem e do parâmetro utilizado:
 ```
 public ContaCorrente(int agencia, int numero)
     {
@@ -302,3 +303,32 @@ public ContaCorrente(int agencia, int numero)
     }
 ```
 *nameof() retorna o nome de um atributo como string
+
+### Criação de exceções (cria exceções novas):
+
+É possível criar também classes de exceção, basta derivar da classe Exception.
+```
+namespace ByteBank
+{
+    public class SaldoInsuficienteException : Exception
+    {
+        public double Saldo { get; } // readonly
+        public double ValorDeSaque { get; } // readonly
+        public SaldoInsuficienteException()
+        {
+        }
+
+        public SaldoInsuficienteException(string message) : base(message)
+        {
+
+        }
+
+        public SaldoInsuficienteException(double saldo, double valor) 
+            : this($"Tentativa de saque no valor de {valor} com saldo de: {saldo}")
+        {
+            Saldo = saldo;
+            ValorDeSaque = valor;
+        }
+    }
+}
+```
