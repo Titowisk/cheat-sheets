@@ -287,3 +287,18 @@ catch(exception2 someVar)
 }
 ...
 ```
+Posso criar exceções customizadas:
+```
+public ContaCorrente(int agencia, int numero)
+    {
+        // exceções personalizads com mensagens
+        if (agencia <= 0) throw new ArgumentException($"{nameof(agencia)} deve ser maior que 0", nameof(agencia));
+        if (numero <= 0) throw new ArgumentException($"{nameof(numero)} deve ser maior que 0", nameof(numero));
+        
+        Agencia = agencia;
+        Numero = numero;
+
+        TotalDeContasCriadas++;
+    }
+```
+*nameof() retorna o nome de um atributo como string
