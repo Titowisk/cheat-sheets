@@ -98,6 +98,24 @@ public class ContaCorrente
     }
 }
 ```
+- Argumentos Opcionais:
+```
+// Definição
+meuMetodo(int numero = 5, double dinheiro = 100.5)
+{
+  // código
+}
+
+// chamada
+
+meuMetodo() // o compilador vai assumir os valores fornecidos na definição
+```
+
+- Argumentos Nomeados:
+
+```
+meuMetodo(dinheiro: 250.56) // troca o valor somente do parâmetro "dinheiro"
+```
 
 ### Namespaces:
 Serve para definir um conjunto de classes sendo utilizadas:
