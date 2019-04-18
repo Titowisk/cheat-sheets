@@ -334,3 +334,83 @@ namespace ByteBank
     }
 }
 ```
+### Inner Exceptions:
+É possivel criar inner exceptions para gerenciar acessibilidade à informação sensível da aplicação:
+Exemplo, pessoa que Saca dinheiro pode ter acesso ao valor de seu saque e ao saldo de sua conta na mensagem de erro,
+porém uma outra pessoa que faz a transferência talvez não possa ter esse acesso:
+
+SaldoInsuficienteException: possui um construtor que aceita uma **exceção como argumento**
+```
+namespace ByteBank
+{
+    public class OperacaoFinanceiraException : Exception
+    {
+        public OperacaoFinanceiraException()
+        {
+
+        }
+        public OperacaoFinanceiraException(string message) : base(message)
+        {
+
+        }
+
+        public OperacaoFinanceiraException(string message, Exception innerException) :
+            base(message, innerException)
+        {
+
+        }
+    }
+}
+```
+
+Sacar:
+```
+public void Sacar(double valor)
+    {
+        if (_saldo < valor)
+        {
+            ContadorSaquesNaoPermitidos++;
+            // oferece informação de saldo e valor no erro
+            throw new SaldoInsuficienteException(Saldo, valor); 
+        }
+
+        _saldo -= valor;
+    }
+```
+
+Transferir:
+```
+public void Transferir(double valor, ContaCorrente contaDestino)
+    {
+        if (valor < 0)
+        {
+            throw new SaldoInsuficienteException("Não é possível transferir valor negativo");
+        }
+
+        try
+        {
+            Sacar(valor);
+        }
+        catch (SaldoInsuficienteException ex)
+        {
+            ContadorTransferenciasNaoPermitidas++;
+            // não oferece informação de saldo do erro
+            throw new OperacaoFinanceiraException("Operação não pôde ser realizada.", ex);
+        }
+        contaDestino.Depositar(valor);
+    }
+```
+
+O programa pode então usar a mensagem da exceção ou da exceção interna:
+
+```
+// try block
+catch (OperacaoFinanceiraException e)
+    {
+        Console.WriteLine(e.Message); // OperacaoFinanceiraException
+        Console.WriteLine(e.StackTrace); // OperacaoFinanceiraException
+        Console.WriteLine("Inner Exception ------------------");
+        Console.WriteLine(e.InnerException.Message); // SaldoInsuficienteException
+        Console.WriteLine(e.InnerException.StackTrace); // SaldoInsuficienteException
+    }
+```
