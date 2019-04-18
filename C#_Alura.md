@@ -414,3 +414,42 @@ catch (OperacaoFinanceiraException e)
         Console.WriteLine(e.InnerException.StackTrace); // SaldoInsuficienteException
     }
 ```
+### Try/Catch/Finally e Using:
+Sintaxe do Try-catch-finally:
+```
+LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt");
+try
+{
+    leitor.LerProximaLinha();
+    leitor.LerProximaLinha();
+    leitor.LerProximaLinha();
+}
+catch(IOException)
+{
+    Console.WriteLine("Exceção do tipo IOException capturada e tratada!");
+}
+finally
+{
+    leitor.Fechar();
+}
+```
+
+Syntax Sugar: Using {}
+```
+using (LeitorDeArquivo leitor = new LeitorDeArquivo("teste.txt"))
+    {
+        leitor.LerProximaLinha();
+    }
+```
+Para isso, a classe LeitorDeArquivo deve implementar o IDisposable:
+```
+public class LeitorDeArquivo : IDisposable
+{
+    // code
+    
+    public void Dispose()
+    {
+        Console.WriteLine("Fechando arquivo.");
+    }
+}
+```
