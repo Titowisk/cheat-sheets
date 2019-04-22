@@ -475,7 +475,8 @@ public class LeitorDeArquivo : IDisposable
 ## Coleções em C#:
 
 - Arrays: `someType[] someName = new someType[n]` n = [0, 1, 2, ..., n-1]
-Obs: Sintax Sugar
+
+**Obs: Sintax Sugar**
 ```
 int[] idades = new int[]
     {
