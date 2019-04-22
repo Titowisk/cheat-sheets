@@ -493,3 +493,5 @@ int[] idades = new int[]
     };
     // [32, 42, 19, 24]
 ```
+**Obs:** Passando um array para uma função/método:
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/params
