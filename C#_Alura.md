@@ -225,7 +225,8 @@ public Diretor(string cpf) : base(cpf)
 ...
 }
 ```
-
+Para usar indexadores no constructor (myClassItem[index]):
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/using-indexers
 
 ### Static Methods and Properties:
 São acessadas pelo nome da classe, inclusive dentro de seu próprio contexto.
