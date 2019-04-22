@@ -1,6 +1,6 @@
 # Cursos de C# da Alura
 
-## História e Ecossistema .NET:
+## 1.História e Ecossistema .NET:
 
 A máquina virtual que fica acima do sistema operacional é a CLR (Common Language Runtime), nesse mundo C#. 
 Na camada logo acima, teremos a biblioteca, chamada de .NET Framework, e subindo uma mais, teremos a Aplicação .NET. 
@@ -12,7 +12,7 @@ Com as alterações, ficamos com a seguinte ordenação das camadas.
 - CLR - Common Language Runtime (Máquina Virtual)
 - Sistemas Operacionais: Windows | Linux | ...
 
-## Tipos e Conversões
+## 2.Tipos e Conversões
 
 - C# é uma linguagem de tipagem forte (similar ao java)
 - double, int, float, char, string...
@@ -43,7 +43,7 @@ int i = (int) d;
 - É possível fazer conversões usando `as`, mas somente para alguns tipos:
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/as
 
-## If else
+## 3.If else
 Mesmo do Java if () {}
 Mas pode ser usado assim:
 ```
@@ -67,7 +67,7 @@ switch (variavelASerTestada) {
             comando(s) caso nenhuma das opções anteriores tenha sido escolhida
 }
 ```
-## Classes
+## 4.Classes
 
 ```
 public class ContaCorrente
@@ -280,20 +280,20 @@ Permite tornar um atributo/propriedade/método, exclusivo do contexto de classes
 O "private" torna um atriuto/propriedade/método exclusivo somente para um contexto.
 O "protected" permite seu uso a toda hierarquia de heranças de classes.
 
-## Classes Abstratas
+## 6.Classes Abstratas
 Torna uma classe não instânciável, pois ela serve apenas de molde para suas classes filhas.
 
 ### Métodos Abstratos:
 Força a nível de compilação, que as classes filhas implementem os métodos herdados da classe abstrata pai.
 
-## Herança Multipla:
+## 7.Herança Multipla:
 Herança múltipla não é permitido em C#. No caso são utilizados Interfaces
 
 - Uma classe só pode herdar uma única classe, mas pode herdar diversas interfaces;
 - Classes abstratas podem ter implementações (de métodos de uma interface por exemplo);
 - Interfaces não podem ter implementações;
 
-## Exceptions:
+## 8.Exceptions:
 O c# possui a seguinte sintaxe para capturar/lidar com exceções:
 ```
 try
@@ -483,7 +483,7 @@ public class LeitorDeArquivo : IDisposable
 }
 ```
 
-## Coleções em C#:
+## 9.Coleções em C#:
 
 - Arrays: `someType[] someName = new someType[n]` n = [0, 1, 2, ..., n-1]
 
@@ -497,3 +497,39 @@ int[] idades = new int[]
 ```
 **Obs:** Passando um array para uma função/método:
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/params
+
+- Listas:
+
+## 10.Extensões de classes:
+Como adicionar novas funcionalidades {a classes existentes):
+```
+public static class ListaExtensoes
+    {
+        public static void AdicionaVarios(List<int> listaDeInt, params int[] itens)
+        {
+            foreach (int item in itens)
+            {
+                listaDeInt.Add(item);
+            }
+        }
+    }
+// chamada
+  List<int> idades = new List<int>();
+  // código...
+  ListaExtensoes.AdicionaVarios(idades, 99, 666, 042);
+```
+Usando o `this`, pode-se chamar o método da própria classe criada:
+```
+public static class ListaExtensoes
+    {
+        public static void AdicionaVarios(this List<int> listaDeInt, params int[] itens)
+        {
+            foreach (int item in itens)
+            {
+                listaDeInt.Add(item);
+            }
+        }
+    }
+// chamada
+idades.AdicionaVarios(99, 666, 042);
+```
