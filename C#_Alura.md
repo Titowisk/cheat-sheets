@@ -239,6 +239,8 @@ Propriedades podem ser estáticas e seus getters and setters privados
 // mas não é permitido atribuir valor a ela fora do contexto da classe
 public static int TotalDeContasCriadas { get; private set; }
 ```
+**Obs:** métodos e variáveis estáticos para tipos genéricos:  uma variável estática declarada em uma classe genérica é compartilhada entre todas as classes **de mesmo tipo genérico**. Mas, não é compartilhada entre classes de tipo genérico diferente.
+
 ### Herança:
 A notação ```classe filha : classe pai``` indica a herança.
 A palavra reservada ```base``` permite acessar recursos da classe pai, dentro do contexto da classe filha.
@@ -279,7 +281,7 @@ O "private" torna um atriuto/propriedade/método exclusivo somente para um conte
 O "protected" permite seu uso a toda hierarquia de heranças de classes.
 
 ## Classes Abstratas
-Torna uma classe não instânciável, pois ela serve apenas de molde para suas classes filhas
+Torna uma classe não instânciável, pois ela serve apenas de molde para suas classes filhas.
 
 ### Métodos Abstratos:
 Força a nível de compilação, que as classes filhas implementem os métodos herdados da classe abstrata pai.
