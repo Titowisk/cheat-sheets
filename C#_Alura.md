@@ -501,7 +501,8 @@ https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/param
 - Listas:
 
 ## 10.Extensões de classes:
-Como adicionar novas funcionalidades {a classes existentes):
+- Como adicionar novas funcionalidades {a classes existentes):
+https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
 ```
 public static class ListaExtensoes
     {
@@ -518,7 +519,7 @@ public static class ListaExtensoes
   // código...
   ListaExtensoes.AdicionaVarios(idades, 99, 666, 042);
 ```
-Usando o `this`, pode-se chamar o método da própria classe criada:
+- Usando o `this`, pode-se chamar o método da própria classe criada:
 ```
 public static class ListaExtensoes
     {
@@ -532,4 +533,17 @@ public static class ListaExtensoes
     }
 // chamada
 idades.AdicionaVarios(99, 666, 042);
+```
+- Extensões usando métodos genéricos:
+```
+public static class ListaExtensoes
+    {
+        public static void AdicionaVarios<T>(this List<T> lista, params T[] itens)
+        {
+            foreach (T item in itens)
+            {
+                lista.Add(item);
+            }
+        }
+    }
 ```
