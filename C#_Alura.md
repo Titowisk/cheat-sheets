@@ -141,6 +141,18 @@ meuMetodo() // o compilador vai assumir os valores fornecidos na definição
 ```
 meuMetodo(dinheiro: 250.56) // troca o valor somente do parâmetro "dinheiro"
 ```
+- **Funções Lambda**:
+Funciona de forma similar a `arrow functions` do javascript
+```
+var contasOrdenadas = contas.OrderBy(conta =>
+    {
+        if(conta == null)
+        {
+            return int.MaxValue;
+        }
+        return conta.Numero;
+    });
+```
 
 ### Namespaces:
 Serve para definir um conjunto de classes sendo utilizadas:
@@ -565,7 +577,7 @@ public static class ListaExtensoes
         }
     }
 ```
-## 11. Interface IComparable e IComparer:
+## 11. Interface IComparable e IComparer x OrderBy:
 - IComparable serve para implantar um método para definir como ocorre a ordenação
 em uma Classe.
 ```
@@ -612,3 +624,7 @@ var contas = new List<ContaCorrente>()
 
     contas.Sort(new ComparadorContaCorrentePorAgencia()); // compara pela Agencia
 ```
+- OrderBy é a funcionalidade mais adequada para comparações, pois permite que um tipo
+seja ordenado por um atributo escolhido na hora usando `funções lambda`:
+
+https://docs.microsoft.com/en-us/dotnet/api/system.linq.iorderedenumerable-1?view=netframework-4.8
