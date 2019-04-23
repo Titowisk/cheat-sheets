@@ -535,6 +535,7 @@ public static class ListaExtensoes
 idades.AdicionaVarios(99, 666, 042);
 ```
 - Extensões usando métodos genéricos:
+https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/generics/generic-methods
 ```
 public static class ListaExtensoes
     {
