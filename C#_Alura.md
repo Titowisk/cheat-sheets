@@ -565,3 +565,50 @@ public static class ListaExtensoes
         }
     }
 ```
+## 11. Interface IComparable e IComparer:
+- IComparable serve para implantar um método para definir como ocorre a ordenação
+em uma Classe.
+```
+public int CompareTo(object obj)
+    {
+        var outraConta = obj as ContaCorrente;
+
+        if (outraConta == null) return 1;
+
+        return Numero.CompareTo(outraConta.Numero);
+    }
+// chamada:
+var contas = new List<ContaCorrente>()
+    {
+      new ContaCorrente(341, 57480),
+      new ContaCorrente(342, 45678),
+      new ContaCorrente(340, 48950),
+      new ContaCorrente(290, 18950)
+    };
+
+    contas.Sort(); // compara pelo Numero
+```
+- IComparer serve para implantar diferentes formas de ordenação de uma classe utilizando
+classes estáticas.
+```
+class ComparadorContaCorrentePorAgencia : IComparer<ContaCorrente>
+    {
+        public int Compare(ContaCorrente x, ContaCorrente y)
+        {
+            if (x == null) return 1;
+            if (y == null) return 1;
+
+            return x.Agencia.CompareTo(y.Agencia);
+        }
+    }
+// chamada:
+var contas = new List<ContaCorrente>()
+    {
+      new ContaCorrente(341, 57480),
+      new ContaCorrente(342, 45678),
+      new ContaCorrente(340, 48950),
+      new ContaCorrente(290, 18950)
+    };
+
+    contas.Sort(new ComparadorContaCorrentePorAgencia()); // compara pela Agencia
+```
