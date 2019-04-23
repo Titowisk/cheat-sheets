@@ -43,6 +43,23 @@ int i = (int) d;
 - É possível fazer conversões usando `as`, mas somente para alguns tipos:
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/as
 
+- É possível utilizar uma variável que irá ter o tipo do valor que está sendo atribuida a ela:
+```
+// antes
+ContaCorrente conta = new ContaCorrente(344,56456556);
+GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
+List<GerenciadorBonificacao> gerenciadores = new List<GerenciadorBonificacao>();
+string frase = "Olá Mundo!";
+int idade = 35;
+
+// depois (var)
+var conta = new ContaCorrente(344,56456556);
+var gerenciador = new GerenciadorBonificacao();
+var gerenciadores = new List<GerenciadorBonificacao>();
+var frase = "Olá Mundo!";
+var idade = 35;
+```
+
 ## 3.If else
 Mesmo do Java if () {}
 Mas pode ser usado assim:
