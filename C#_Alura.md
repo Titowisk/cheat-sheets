@@ -60,6 +60,10 @@ var frase = "Olá Mundo!";
 var idade = 35;
 ```
 
+### String
+Métodos, propriedades...
+https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.8
+
 ## 3.If else
 Mesmo do Java if () {}
 Mas pode ser usado assim:
