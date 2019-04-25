@@ -516,9 +516,10 @@ public class LeitorDeArquivo : IDisposable
 }
 ```
 
-## 9.Coleções em C#:
+## Coleções em C#:
 
 - Arrays: `someType[] someName = new someType[n]` n = [0, 1, 2, ..., n-1]
+https://docs.microsoft.com/en-us/dotnet/api/system.array?view=netframework-4.8
 
 **Obs: Sintax Sugar**
 ```
@@ -532,6 +533,7 @@ int[] idades = new int[]
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/params
 
 - Listas:
+https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.8#definition
 
 ## 10.Extensões de classes:
 - Como adicionar novas funcionalidades {a classes existentes):
