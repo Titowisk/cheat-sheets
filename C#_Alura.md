@@ -534,6 +534,17 @@ https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/param
 
 - Listas:
 https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.8#definition
+Exemplos:
+```
+// Primeira aula da lista que contem a string "trabalhando"
+Console.WriteLine("A primeira aula 'Trabalhando' é:" + aulas.First(aula =>  aula.Contains("Trabalhando")));
+
+// Última aula da lista que contém a string "trabalhando"
+Console.WriteLine("A última aula 'Trabalhando' é:" + aulas.Last(aula =>  aula.Contains("Trabalhando")));
+
+// O mesmo que o outro, só que retorna uma valor default caso não satisfaça a condição
+Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula =>  aula.Contains("Conclusão")));
+```
 
 ## 10.Extensões de classes:
 - Como adicionar novas funcionalidades {a classes existentes):
