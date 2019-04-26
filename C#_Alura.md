@@ -645,3 +645,6 @@ var contas = new List<ContaCorrente>()
 seja ordenado por um atributo escolhido na hora usando `funções lambda`:
 
 https://docs.microsoft.com/en-us/dotnet/api/system.linq.iorderedenumerable-1?view=netframework-4.8
+
+## Dicas:
+https://www.caelum.com.br/apostila-csharp-orientacao-objetos/
