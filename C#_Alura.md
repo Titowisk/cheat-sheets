@@ -648,3 +648,4 @@ https://docs.microsoft.com/en-us/dotnet/api/system.linq.iorderedenumerable-1?vie
 
 ## Dicas:
 https://www.caelum.com.br/apostila-csharp-orientacao-objetos/
+https://www.caelum.com.br/apostila-csharp-orientacao-objetos/lidando-com-conjuntos/#exerccios
