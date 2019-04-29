@@ -545,6 +545,11 @@ Console.WriteLine("A última aula 'Trabalhando' é:" + aulas.Last(aula =>  aula.
 // O mesmo que o outro, só que retorna uma valor default caso não satisfaça a condição
 Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula =>  aula.Contains("Conclusão")));
 ```
+- Lista Conectada (LinkedLists):
+
+- Pilha (Stack):
+
+- Fila (Queue:
 
 ## 10.Extensões de classes:
 - Como adicionar novas funcionalidades {a classes existentes):
