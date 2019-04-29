@@ -1,6 +1,6 @@
 # Cursos de C# da Alura
 
-## 1.História e Ecossistema .NET:
+## História e Ecossistema .NET:
 
 A máquina virtual que fica acima do sistema operacional é a CLR (Common Language Runtime), nesse mundo C#. 
 Na camada logo acima, teremos a biblioteca, chamada de .NET Framework, e subindo uma mais, teremos a Aplicação .NET. 
@@ -12,7 +12,7 @@ Com as alterações, ficamos com a seguinte ordenação das camadas.
 - CLR - Common Language Runtime (Máquina Virtual)
 - Sistemas Operacionais: Windows | Linux | ...
 
-## 2.Tipos e Conversões
+## Tipos e Conversões
 
 - C# é uma linguagem de tipagem forte (similar ao java)
 - double, int, float, char, string...
@@ -64,7 +64,7 @@ var idade = 35;
 Métodos, propriedades...
 https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.8
 
-## 3.If else
+## If else
 Mesmo do Java if () {}
 Mas pode ser usado assim:
 ```
@@ -88,7 +88,7 @@ switch (variavelASerTestada) {
             comando(s) caso nenhuma das opções anteriores tenha sido escolhida
 }
 ```
-## 4.Classes
+## Classes
 
 ```
 public class ContaCorrente
@@ -326,7 +326,7 @@ Herança múltipla não é permitido em C#. No caso são utilizados Interfaces
 - Classes abstratas podem ter implementações (de métodos de uma interface por exemplo);
 - Interfaces não podem ter implementações;
 
-## 8.Exceptions:
+## Exceptions:
 O c# possui a seguinte sintaxe para capturar/lidar com exceções:
 ```
 try
@@ -518,7 +518,7 @@ public class LeitorDeArquivo : IDisposable
 
 ## Coleções em C#:
 
-- Arrays: `someType[] someName = new someType[n]` n = [0, 1, 2, ..., n-1]
+### Arrays: `someType[] someName = new someType[n]` n = [0, 1, 2, ..., n-1]
 https://docs.microsoft.com/en-us/dotnet/api/system.array?view=netframework-4.8
 
 **Obs: Sintax Sugar**
@@ -532,7 +532,7 @@ int[] idades = new int[]
 **Obs:** Passando um array para uma função/método:
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/params
 
-- Listas:
+- List:
 https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.8#definition
 Exemplos:
 ```
@@ -545,13 +545,26 @@ Console.WriteLine("A última aula 'Trabalhando' é:" + aulas.Last(aula =>  aula.
 // O mesmo que o outro, só que retorna uma valor default caso não satisfaça a condição
 Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula =>  aula.Contains("Conclusão")));
 ```
+
+### Listas:
+
 - Lista Conectada (LinkedLists):
 
-- Pilha (Stack):
+- Pilha (Stack): Last-in First-out
 
-- Fila (Queue:
+- Fila (Queue: first-in, first-out
 
-## 10.Extensões de classes:
+### Dicionário:
+
+- Dictionary
+
+- SortedList: par (chave, valor) onde a chave é ordenado segundo uma lista
+
+- SortedDicitonary: par (chave, valor) onde a chave é ordenada através de uma Árvore Binária
+
+- HashSet (Conjuntos): valor com hash, onde não há ordem nem valores duplicados.
+
+## Extensões de classes:
 - Como adicionar novas funcionalidades {a classes existentes):
 https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
 ```
@@ -599,7 +612,7 @@ public static class ListaExtensoes
         }
     }
 ```
-## 11. Interface IComparable e IComparer x OrderBy:
+## Interface IComparable e IComparer x OrderBy:
 - IComparable serve para implantar um método para definir como ocorre a ordenação
 em uma Classe.
 ```
