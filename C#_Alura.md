@@ -561,6 +561,7 @@ Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula
 - SortedList: par (chave, valor) onde a chave é ordenado segundo uma lista
 
 - SortedDicitonary: par (chave, valor) onde a chave é ordenada através de uma Árvore Binária
+Permite inserções/remoções melhor que o SortedList
 
 - HashSet (Conjuntos): valor com hash, onde não há ordem nem valores duplicados.
 
