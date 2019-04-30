@@ -548,7 +548,9 @@ Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula
 
 ### Listas:
 
-- Lista Conectada (LinkedLists): adequado para grande número de inserções e alterações no meio da lista.
+- Lista Ligada (LinkedLists): adequado para grande número de inserções e alterações no meio da lista.
+
+As **desvantagens de uma lista ligada** implicam no acesso a um elemento de forma indexada, o que é impossível, e na busca de elementos em uma lista, causando um processo bastante demorado. Nestes casos, recomenda-se o uso de List<T>.
 
 - Pilha (Stack): Last-in First-out
 
@@ -566,6 +568,11 @@ Permite inserções/remoções melhor que o SortedList
 - HashSet (Conjuntos): valor com hash, onde não há ordem nem valores duplicados.
 
 -SortedSet (Conjuntos ordenados): possui uma árvore binária balanceada para armazenar os valores. Não há hashs.
+
+**Nível: Avançado (copiado da aula ALURA)**
+A classe genérica SortedDictionary é uma árvore de busca binária com "comportamento de recuperação de dados" expresso na notação de complexidade O(log n), onde n é o número de elementos no dicionário.
+Sob esse aspecto, ela é similar à classe genérica SortedList, e as duas possuem complexidade de recuperação equivalente: O(log n)
+Porém, SortedDictionary possui operações de inserção e remoção mais rápidas, porque essas operações em SortedDictionary são O(log n), enquanto as mesmas operações no SortedList possuem complexidade O(n).
 
 ## Extensões de classes:
 - Como adicionar novas funcionalidades {a classes existentes):
