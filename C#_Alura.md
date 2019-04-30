@@ -545,6 +545,24 @@ Console.WriteLine("A última aula 'Trabalhando' é:" + aulas.Last(aula =>  aula.
 // O mesmo que o outro, só que retorna uma valor default caso não satisfaça a condição
 Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula =>  aula.Contains("Conclusão")));
 ```
+- Array Multidimensional:
+```
+string[,] resultados = new string[3,3]
+        {
+                {"Alemanha", "Espanha", "Itália"},
+                {"Argentina", "Holanda", "França"},
+                {"Holanda", "Alemanha", "Alemanha"},
+        };
+```
+- Jagged Array (Array Denteado ou Serrilhado):
+```
+
+string [][] familias = new string [3][]
+
+familias[0] = new string[] {"Fred", "Wilma", "Pedrita"};
+familias[1] = new string[] {"Homer", "Marge", "Lisa", "Bart", "Maggie"};
+familias[2] = new string[] {"Florinda", "Kiko"}
+```
 
 ### Listas:
 
