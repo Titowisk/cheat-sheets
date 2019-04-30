@@ -89,8 +89,6 @@ switch (variavelASerTestada) {
 }
 ```
 
-## LINQ
-Isso aí! Qualquer coleção que implementa a interface IEnumerable pode ser fonte de dados de uma consulta LINQ.
 
 ## Dicas:
 https://www.caelum.com.br/apostila-csharp-orientacao-objetos/
