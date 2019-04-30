@@ -1,6 +1,8 @@
 # Coleções em C#
 
-## Arrays: `someType[] someName = new someType[n]` n = [0, 1, 2, ..., n-1]
+## Arrays: 
+
+`someType[] someName = new someType[n]` n = [0, 1, 2, ..., n-1]
 https://docs.microsoft.com/en-us/dotnet/api/system.array?view=netframework-4.8
 
 **Obs: Sintax Sugar**
@@ -73,3 +75,8 @@ Permite inserções/remoções melhor que o SortedList
 A classe genérica SortedDictionary é uma árvore de busca binária com "comportamento de recuperação de dados" expresso na notação de complexidade O(log n), onde n é o número de elementos no dicionário.
 Sob esse aspecto, ela é similar à classe genérica SortedList, e as duas possuem complexidade de recuperação equivalente: O(log n)
 Porém, SortedDictionary possui operações de inserção e remoção mais rápidas, porque essas operações em SortedDictionary são O(log n), enquanto as mesmas operações no SortedList possuem complexidade O(n).
+
+
+## LINQ
+Isso aí! Qualquer coleção que implementa a interface IEnumerable pode ser fonte de dados de uma consulta LINQ.
+https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/concepts/linq/standard-query-operators-overview
