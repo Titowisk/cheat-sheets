@@ -692,6 +692,10 @@ seja ordenado por um atributo escolhido na hora usando `funções lambda`:
 
 https://docs.microsoft.com/en-us/dotnet/api/system.linq.iorderedenumerable-1?view=netframework-4.8
 
+## LINQ
+Isso aí! Qualquer coleção que implementa a interface IEnumerable pode ser fonte de dados de uma consulta LINQ.
+
 ## Dicas:
 https://www.caelum.com.br/apostila-csharp-orientacao-objetos/
 https://www.caelum.com.br/apostila-csharp-orientacao-objetos/lidando-com-conjuntos/#exerccios
+https://www.linqpad.net/
