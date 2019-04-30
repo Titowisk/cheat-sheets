@@ -93,6 +93,7 @@ object[] arrayObj = arrayMeses; //COVARIÂNCIA! (irá gerar problemas)
 List<string> listaMeses = new List<string>{"jan", "fev","mar"...}
 IEnumerable<object> enumObj = listaMeses; //COVARIÂNCIA (não gera problemas)
 ```
+https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/concepts/covariance-contravariance/
 
 ## LINQ
 Isso aí! Qualquer coleção que implementa a interface IEnumerable pode ser fonte de dados de uma consulta LINQ.
