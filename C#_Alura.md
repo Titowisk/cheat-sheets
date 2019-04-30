@@ -548,7 +548,7 @@ Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula
 
 ### Listas:
 
-- Lista Conectada (LinkedLists):
+- Lista Conectada (LinkedLists): adequado para grande número de inserções e alterações no meio da lista.
 
 - Pilha (Stack): Last-in First-out
 
@@ -556,7 +556,7 @@ Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula
 
 ### Dicionário:
 
-- Dictionary
+- Dictionary: par (chave, valor) onde as chaves são guardadas sem ordem definida e dão acesso aos valores.
 
 - SortedList: par (chave, valor) onde a chave é ordenado segundo uma lista
 
@@ -564,6 +564,8 @@ Console.WriteLine("A primeira aula 'Conclusão' é:" + aulas.FirstOrDefault(aula
 Permite inserções/remoções melhor que o SortedList
 
 - HashSet (Conjuntos): valor com hash, onde não há ordem nem valores duplicados.
+
+-SortedSet (Conjuntos ordenados): possui uma árvore binária balanceada para armazenar os valores. Não há hashs.
 
 ## Extensões de classes:
 - Como adicionar novas funcionalidades {a classes existentes):
