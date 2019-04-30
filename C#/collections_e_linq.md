@@ -76,6 +76,23 @@ A classe genérica SortedDictionary é uma árvore de busca binária com "compor
 Sob esse aspecto, ela é similar à classe genérica SortedList, e as duas possuem complexidade de recuperação equivalente: O(log n)
 Porém, SortedDictionary possui operações de inserção e remoção mais rápidas, porque essas operações em SortedDictionary são O(log n), enquanto as mesmas operações no SortedList possuem complexidade O(n).
 
+**Obs Covariância**: A covariância acontece quando um objeto de menor derivação é atribuido a um objeto de maior derivação (Ex: string para object). Em alguns casos ela pode gerar problemas, em outros não. **De qualquer forma, deve-se evitar!!!!**
+```
+string[] arrayMeses = new string[]
+{
+        "Janeiro", "Fevereiro", "Março",
+        "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro",
+        "Outubro", "Novembro", "Dezembro"
+};
+
+object[] arrayObj = arrayMeses; //COVARIÂNCIA! (irá gerar problemas)
+```
+
+```
+List<string> listaMeses = new List<string>{"jan", "fev","mar"...}
+IEnumerable<object> enumObj = listaMeses; //COVARIÂNCIA (não gera problemas)
+```
 
 ## LINQ
 Isso aí! Qualquer coleção que implementa a interface IEnumerable pode ser fonte de dados de uma consulta LINQ.
