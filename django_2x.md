@@ -106,6 +106,8 @@ formulário-ligado na página em questão.
 !!!
 
 ### Ajax GET request
+Inspiração: https://www.techiediaries.com/python-django-ajax/
+
 1. Construa uma requisição ajax get com Jquery:
 https://api.jquery.com/jQuery.get/
 ```
