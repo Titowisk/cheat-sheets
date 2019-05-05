@@ -105,6 +105,79 @@ que pega o código HTML gerado pelo ```UploadFileForm``` para criar o
 formulário-ligado na página em questão.
 !!!
 
+### Ajax GET request
+1. Construa uma requisição ajax get com Jquery:
+https://api.jquery.com/jQuery.get/
+```
+$.get(
+    `transactions/monthsByYear/${year}`,
+    function(data){
+        console.log(data.months)
+
+        // erase .options__months childs
+        $('.options__months').empty()
+
+        // takes a json data and fill up the .options__months element
+        data.months.forEach(month => {
+        // build a li element with class, attribute and text
+            let $li = $('<li></li>').addClass('month__item').attr("data-id", month.id).text(`${month.name}`)
+            // append to the final of the .options_months element
+           $('.options__months').append($li)
+        });
+    }
+```
+
+3. Construa uma URL com captura de argumentos:
+```
+path('transactions/monthsByYear/<year>', views.MonthsByYearList.as_view(), name='months_by_year'),
+```
+
+4. Construa uma view em Django/python para receber a requisição GET
+
+**Obs: É necessário retornar uma resposta JSON.**
+```
+class MonthsByYearList(ListView):
+    """
+    receiveis a GET request and returns months json data
+    according to the year choosed.
+    """
+    def get(self, request, *args, **kwargs):
+        print(kwargs['year'])
+        months = Year.objects.get(name=kwargs['year']).months.all()
+        months_display = list()
+        for month in months:
+            # {'id': 1,'name': Janeiro}, {'id': 2, 'name': Fevereiro}...
+            months_display.append(dict(id=month.id, name=month.get_month_number_display()))
+        data = dict()
+        data['months'] = months_display
+        return JsonResponse(data)
+```
+Da forma que foi construida a URL, quando uma requisição GET chamar a URL com aquele padrão,
+o Django ele vai capturar o elemento da URL com a keyword especificada
+
+Por exemplo: ```[05/May/2019 17:08:30] "GET /budget_viewer/transactions/monthsByYear/18 HTTP/1.1" 200 14```
+
+DJango vai pegar o ```18``` e guardar em um dicionário ```kwargs['year'] = 18```. Existem várias formas de acessar esse
+dicionário em uma view. Uma delas está feita acima.
+
+5. Agora é só utilizar os dados.
+```
+function(data){
+        console.log(data.months)
+
+        // erase .options__months childs
+        $('.options__months').empty()
+
+        // takes a json data and fill up the .options__months element
+        data.months.forEach(month => {
+            // build a li element with class, attribute and text
+            let $li = $('<li></li>').addClass('month__item').attr("data-id", month.id).text(`${month.name}`)
+            // append to the final of the .options_months element
+           $('.options__months').append($li)
+        });
+    }
+```
+
 # Exceptions
 É possível lidar com exceções criadas pelo Django importando elas de django.core.exceptions.
 https://docs.djangoproject.com/en/2.1/ref/exceptions/
