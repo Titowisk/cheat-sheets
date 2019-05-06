@@ -19,5 +19,18 @@ For more information, see Default Keyboard Shortcuts in Visual Studio.
 Visual Studio Team Services (VSTS) is a cloud-based service for hosting software projects and enabling collaboration 
 in teams. VSTS supports both Git and Team Foundation Source Control systems, as well as Scrum, CMMI and Agile development methodologies.
 
+## WebForms
+
+Em WebForms eu tenho que definir como serão os modelos em uma pasta ```models```, como os modelos se comunicam
+com o banco de dados em uma pasta ```DAO```, as configurações de conexão em ```Web.config``` e também definir
+as páginas do projeto com tags ```<asp:<alguma_coisa>```.
+
+O estilo e a arrumação é veita nessas páginas do WebForms, eu tenho que definir os nomes dos métodos que vão
+acionar as ações do CRUD (create, read, update e delete). Nessas páginas eu misturo código ```html``` e
+tags ```<asp>```.
+
+**Obs: Erro 403 ao compilar**: acontece porque eu não setei qual a página que irá servir de StartUp page e também
+qual projeto irá servir de StartUp Project (nas configurações do Visual Studio).
+
 ## Visual Studio 2015
 https://docs.microsoft.com/pt-br/visualstudio/ide/visual-studio-ide?view=vs-2015
