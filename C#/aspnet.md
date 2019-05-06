@@ -29,6 +29,10 @@ O estilo e a arrumação é veita nessas páginas do WebForms, eu tenho que defi
 acionar as ações do CRUD (create, read, update e delete). Nessas páginas eu misturo código ```html``` e
 tags ```<asp>```.
 
+### ViewState:
+https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/ms972976(v=msdn.10)#the-role-of-view-state
+Serve para armazenar informações que precisam ser persistidas ao longo do ciclo de vida do projeto.
+
 **Obs: Erro 403 ao compilar**: acontece porque eu não setei qual a página que irá servir de StartUp page e também
 qual projeto irá servir de StartUp Project (nas configurações do Visual Studio).
 
