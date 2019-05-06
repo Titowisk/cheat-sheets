@@ -23,7 +23,7 @@ in teams. VSTS supports both Git and Team Foundation Source Control systems, as 
 
 Em WebForms eu tenho que definir como serão os modelos em uma pasta ```models```, como os modelos se comunicam
 com o banco de dados em uma pasta ```DAO```, as configurações de conexão em ```Web.config``` e também definir
-as páginas do projeto com tags ```<asp:<alguma_coisa>```.
+as páginas do projeto com tags ```<asp:WebControlName Prop1="Value1" ... />```.
 
 O estilo e a arrumação é veita nessas páginas do WebForms, eu tenho que definir os nomes dos métodos que vão
 acionar as ações do CRUD (create, read, update e delete). Nessas páginas eu misturo código ```html``` e
