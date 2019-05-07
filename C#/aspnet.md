@@ -29,9 +29,22 @@ O estilo e a arrumação é veita nessas páginas do WebForms, eu tenho que defi
 acionar as ações do CRUD (create, read, update e delete). Nessas páginas eu misturo código ```html``` e
 tags ```<asp>```.
 
+# LifeCycle
+Começa invocando o HTTP'Handler que instancia a hierarquia de controles (control hierarchy) e após isso vem as fases de
+```Initialization```, ```LoadViewState```, ```LoadPostBackData```, ```Load```, ```RaisePostBackEvent```, 
+```SaveViewState```, ```Render``` e retorna ao HTTP handler para enviar para o cliente.
+
+
+
 ### ViewState:
 https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/ms972976(v=msdn.10)#the-role-of-view-state
 Serve para armazenar informações que precisam ser persistidas ao longo do ciclo de vida do projeto.
+**Importante lembrar** que informações de ```Web Controls``` são salvas através de PostBacks na por causa que
+suas classes implementa o ```IPostBackDataHandler``` que exige o método ```loadPostData()``` que salva
+informações inseridas pelos usuários em ```Web Controls```
+
+
+
 
 **Obs: Erro 403 ao compilar**: acontece porque eu não setei qual a página que irá servir de StartUp page e também
 qual projeto irá servir de StartUp Project (nas configurações do Visual Studio).
