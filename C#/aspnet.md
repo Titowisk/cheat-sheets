@@ -19,6 +19,18 @@ For more information, see Default Keyboard Shortcuts in Visual Studio.
 Visual Studio Team Services (VSTS) is a cloud-based service for hosting software projects and enabling collaboration 
 in teams. VSTS supports both Git and Team Foundation Source Control systems, as well as Scrum, CMMI and Agile development methodologies.
 
+## ASP Pages
+https://docs.microsoft.com/en-us/previous-versions/aspnet/k33801s3(v=vs.100)
+
+## Web Server Controls:
+https://docs.microsoft.com/en-us/previous-versions/aspnet/zsyt68f1%28v%3dvs.100%29 (Overview)
+
+Indice de Web Server Controls:
+https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/fxh7k08z(v=vs.85)
+
+## Themas e Estilo (CSS):
+https://docs.microsoft.com/en-us/previous-versions/aspnet/wcyt4fxb%28v%3dvs.100%29
+
 ## WebForms
 
 Em WebForms eu tenho que definir como serão os modelos em uma pasta ```models```, como os modelos se comunicam
@@ -48,6 +60,10 @@ informações inseridas pelos usuários em ```Web Controls```
 
 **Obs: Erro 403 ao compilar**: acontece porque eu não setei qual a página que irá servir de StartUp page e também
 qual projeto irá servir de StartUp Project (nas configurações do Visual Studio).
+
+**Obs:** ```<% %>``` é um code render:
+
+https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/k6xeyd4z(v=vs.100)
 
 ## Visual Studio 2015
 https://docs.microsoft.com/pt-br/visualstudio/ide/visual-studio-ide?view=vs-2015
