@@ -47,12 +47,12 @@ Só escolher quais eventos irão disparar o debug
 
 ### WaterFall TimeLine
 https://developers.google.com/web/tools/chrome-devtools/network-performance/reference#timing-explanation
--**Queueing:** quanto tempo ficou na fila.
--**Stalled:** quanto tempo atrasou.
--**DNS Lookup:** procurar qual ip pertence aquela URL requisitada.
--**Initial Connection:** quanto tempo durou a tentativa de conexão com o servidor.
--**SSL**: faz parte da conexão especial, checa o certificado para saber se a conexão é realmente segura.
+- **Queueing:** quanto tempo ficou na fila.
+- **Stalled:** quanto tempo atrasou.
+- **DNS Lookup:** procurar qual ip pertence aquela URL requisitada.
+- **Initial Connection:** quanto tempo durou a tentativa de conexão com o servidor.
+- **SSL**: faz parte da conexão especial, checa o certificado para saber se a conexão é realmente segura.
 
--**Request sent:** duração do pedido.
--**Waiting(TTFB):** duração da espera após o pedido.
--**Content Download:** duração do download da resposta
+- **Request sent:** duração do pedido.
+- **Waiting(TTFB):** duração da espera após o pedido.
+- **Content Download:** duração do download da resposta
