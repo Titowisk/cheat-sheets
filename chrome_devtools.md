@@ -30,6 +30,9 @@ Vai de ```$0``` até ```$4```, mostrando assim os últimos 5 elementos navegados
 
 - Visualizar os arquivos utilizados na aplicação (html, css, js, imagens, etc.)
 
-- serve para debugar a aplicaçã:
+- serve para debugar a aplicação:
 
-basta escolher linhas de parada no código, voltar a aplicação e executa-la
+Basta escolher linhas de parada no código, voltar a aplicação e executa-la
+
+- É possível linkar a pasta do projeto com o devtools para que alterações feitas no devtools
+sejam feitas automaticamente no código fonte.
