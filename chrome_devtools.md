@@ -19,3 +19,9 @@ console.group()
 console.groupEnd() // serve para agrupar erros
 console.table(matrix) // mostra uma tabela no console
 ```
+
+- É possível preservar as msgs de erro ao clicar na engrenagem e depois em ```Preserve Log```
+- Na aba elements, ao apertar ```esc```, o console abre em uma janela abaixo.
+- Pode-se acessar os elementos do DOM ao clicar em cima de um elemento e escrever o ```$0```
+
+Vai de ```$0``` até ```$4```, mostrando assim os últimos 5 elementos navegados na árvore DOM pelo devtools
