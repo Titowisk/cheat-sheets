@@ -25,3 +25,11 @@ console.table(matrix) // mostra uma tabela no console
 - Pode-se acessar os elementos do DOM ao clicar em cima de um elemento e escrever o ```$0```
 
 Vai de ```$0``` até ```$4```, mostrando assim os últimos 5 elementos navegados na árvore DOM pelo devtools
+
+## Aba Source:
+
+- Visualizar os arquivos utilizados na aplicação (html, css, js, imagens, etc.)
+
+- serve para debugar a aplicaçã:
+
+basta escolher linhas de parada no código, voltar a aplicação e executa-la
