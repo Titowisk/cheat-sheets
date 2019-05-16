@@ -35,4 +35,5 @@ Vai de ```$0``` até ```$4```, mostrando assim os últimos 5 elementos navegados
 Basta escolher linhas de parada no código, voltar a aplicação e executa-la
 
 - É possível linkar a pasta do projeto com o devtools para que alterações feitas no devtools
-sejam feitas automaticamente no código fonte.
+sejam feitas automaticamente no código fonte. (mas a explicação do professor não funciona mais
+na versão do chrome que uso )
