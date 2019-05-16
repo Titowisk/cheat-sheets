@@ -28,12 +28,19 @@ Vai de ```$0``` até ```$4```, mostrando assim os últimos 5 elementos navegados
 
 ## Aba Source:
 
-- Visualizar os arquivos utilizados na aplicação (html, css, js, imagens, etc.)
+Visualizar os arquivos utilizados na aplicação (html, css, js, imagens, etc.)
 
-- serve para debugar a aplicação:
-
-Basta escolher linhas de parada no código, voltar a aplicação e executa-la
-
-- É possível linkar a pasta do projeto com o devtools para que alterações feitas no devtools
+É possível linkar a pasta do projeto com o devtools para que alterações feitas no devtools
 sejam feitas automaticamente no código fonte. (mas a explicação do professor não funciona mais
 na versão do chrome que uso )
+
+**Obs: Nesta aba, na parte de baixo, o ```{}``` serve para dar um pretty print no código. É util para códigos minified por exemplo.**
+### Debug:
+Basta escolher linhas de parada no código, voltar a aplicação e executa-la
+- Debug JS (só escolher uma linha de parada do arquivo js)
+- Debug DOM (inserção de sub-elementos, remoção de elementos, alteração de atributos)
+- Debug EventListeners: aba Source > Event Listeners Break points
+
+Só escolher quais eventos irão disparar o debug
+
+
