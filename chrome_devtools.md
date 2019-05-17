@@ -79,3 +79,7 @@ O localStorage é uma ferramenta que permite bastante versatilidade, mas ela est
 ## Aba Audits:
 Fornece sugestões de otimização da aplicação.
 
+## Device Mode:
+Outra feature muito interessante é a possibilidade de visualizar a ```media query``` marcada na barra de cor amarela
+Além disso, nessa mesma aba também podemos adicionar o ```Trottling``` que é a possibilidade de simular diferentes velocidades de conexão
+Ainda, outra possibilidade interessante no Device é inserir uma frame, uma **moldura de celular**
