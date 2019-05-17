@@ -44,6 +44,9 @@ Basta escolher linhas de parada no código, voltar a aplicação e executa-la
 Só escolher quais eventos irão disparar o debug
 
 ## Aba Network
+Mostra várias informações sobre arquivos carregados (nome, tipo, status, iniciador, tamanho, duração e linha do tempo).
+Pra cada arquivo mostra cabeçalhos, response, preview.
+
 
 ### WaterFall TimeLine
 https://developers.google.com/web/tools/chrome-devtools/network-performance/reference#timing-explanation
@@ -56,3 +59,10 @@ https://developers.google.com/web/tools/chrome-devtools/network-performance/refe
 - **Request sent:** duração do pedido.
 - **Waiting(TTFB):** duração da espera após o pedido.
 - **Content Download:** duração do download da resposta
+
+### No throtling: simulação de velocidade de internet
+Simula velocidades diferentes de internet para avaliar o desempenho para usuários com menos velocidade
+de conexão.
+
+## Aba TimeLine
+
