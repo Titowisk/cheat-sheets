@@ -64,5 +64,18 @@ https://developers.google.com/web/tools/chrome-devtools/network-performance/refe
 Simula velocidades diferentes de internet para avaliar o desempenho para usuários com menos velocidade
 de conexão.
 
-## Aba TimeLine
+## Aba Perfomance:
+
+O professor diz que cada frame não pode passar de 16ms pra obter os 60 fps ideal.
+
+## Aba Memory:
+
+Os profiles permitem uma análise bem baixo nível, mostrando processamento da CPU e alocação de memória. Isso permite que se identifique prolemas em casos de web apps muito dependentes de JS, como Gmail ou Facebook.
+
+## Aba Application:
+Mostra os valores salvos de Local Storage, Cookies, etc.
+O localStorage é uma ferramenta que permite bastante versatilidade, mas ela está na mão do cliente. Portanto tome cuidado e evite colocar nele coisas essenciais.
+
+## Aba Audits:
+Fornece sugestões de otimização da aplicação.
 
