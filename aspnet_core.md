@@ -22,19 +22,31 @@ https://docs.microsoft.com/en-us/ef/core/
 
 https://entityframeworkcore.com/model-data-annotations
 
-- Installing VSCode
+### Installing VSCode
 
 Nuget Package: Microsoft.EntityFrameworkCore (must be exaclty this)
 
-- Add a Database Provider
+### Add a Database Provider
 
 Nuget Package: Microsoft.EntityFrameworkCore.Sqlite (must be exaclty this)
 
-- Configuring Connection
+### Configuring Connection
 
 https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings#aspnet-core
 
-- Safe Storage in Development:
+### Safe Storage in Development:
 
 https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows
 https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows#enable-secret-storage
+
+### Migrations
+https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
+
+Requirements: 
+dotnet tool install --global dotnet-ef  (dotnet Entity Framework Tools)
+Microsoft.EntityFrameworkCore.Design 
+
+
+## Controllers
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controllerbase?view=aspnetcore-3.1
+https://forums.asp.net/t/2007350.aspx?ActionResult+vs+Task+ActionResult+question (ActionResult vs Task)
