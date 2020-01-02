@@ -17,15 +17,24 @@ If I keep the Https url, POSTMAN doesn't work
 ```
 
 ## Entity FrameWork
+
 https://docs.microsoft.com/en-us/ef/core/
+
 https://entityframeworkcore.com/model-data-annotations
-https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings#aspnet-core
 
 - Installing VSCode
+
 Nuget Package: Microsoft.EntityFrameworkCore (must be exaclty this)
 
 - Add a Database Provider
+
 Nuget Package: Microsoft.EntityFrameworkCore.Sqlite (must be exaclty this)
 
+- Configuring Connection
 
+https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings#aspnet-core
 
+- Safe Storage in Development:
+
+https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows
+https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows#enable-secret-storage
