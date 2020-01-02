@@ -38,3 +38,8 @@ or inside `some.component.html`:
     </div>
   </div>
 ```
+
+## Bootstrap and Angular
+https://valor-software.com/ngx-bootstrap/#/
+
+Uses bootstrap and angular but avoids using jquery
