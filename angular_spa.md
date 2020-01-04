@@ -43,3 +43,10 @@ or inside `some.component.html`:
 https://valor-software.com/ngx-bootstrap/#/
 
 Uses bootstrap and angular but avoids using jquery
+
+## Auth Guard
+You can protect routes by only allowing logged users to them.
+
+Look at `routes.ts` and `_guards/` service created using `ng g guard auth --skipTests`
+
+
