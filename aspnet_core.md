@@ -16,36 +16,40 @@ If I keep the Https url, POSTMAN doesn't work
     }
 ```
 
-## Entity FrameWork
+# Entity FrameWork
 
 https://docs.microsoft.com/en-us/ef/core/
 
 https://entityframeworkcore.com/model-data-annotations
 
-### Installing VSCode
+## Installing in VSCode
 
 Nuget Package: Microsoft.EntityFrameworkCore (must be exaclty this)
 
-### Add a Database Provider
+## Add a Database Provider
 
 Nuget Package: Microsoft.EntityFrameworkCore.Sqlite (must be exaclty this)
 
-### Configuring Connection
+## Configuring Connection
 
 https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings#aspnet-core
 
-### Safe Storage in Development:
+## Safe Storage in Development:
 
 https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows
 https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows#enable-secret-storage
 
-### Migrations
+## Migrations
 https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
 
 Requirements: 
 dotnet tool install --global dotnet-ef  (dotnet Entity Framework Tools)
 Microsoft.EntityFrameworkCore.Design 
 
+### Migrations Problems (recover from updated migration in sqlite)
+- drop database from ef
+- remove desired migration
+- re-apply migrations without the undesired one
 
 ## Controllers
 https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controllerbase?view=aspnetcore-3.1
