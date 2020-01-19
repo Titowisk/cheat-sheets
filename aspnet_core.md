@@ -56,6 +56,31 @@ This `ItemDetail` has a `Item` and a `Brand`. Each `Item` and `Brand` has a list
 
 Using the repository pattern, `Dtos` (Data transfer objects) and `AutoMapper` I can create a `ItemDetailForListDto` that brings only the **ItemName instead** of bringing a `Item` that also has a `ItemDetail`...
 
+```
+public class ItemsDetailProfile : Profile
+    {
+        public ItemsDetailProfile()
+        {
+            CreateMap<ItemDetail, ItemDetailForCreationDto>();
+            CreateMap<ItemDetail, ItemsDetailForListDto>()
+                .ForMember(dest => dest.ItemName,
+                    opt => opt.MapFrom(src => src.Item.Name));
+        }
+    }
+```
+
+```
+public class ItemsDetailForListDto
+    {
+        public int Id { get; set; }
+        public int ItemId { get; set; }
+        // public Item Item { get; set; }
+        public string ItemName { get; set; }
+        public int BrandId { get; set; }
+        public Brand Brand { get; set; }
+        ...
+```
+
 # Entity FrameWork
 
 https://docs.microsoft.com/en-us/ef/core/
