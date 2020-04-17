@@ -15,8 +15,10 @@ https://martinfowler.com/bliki/AnemicDomainModel.html
 
 Source: https://stackoverflow.com/questions/10113244/why-use-icollection-and-not-ienumerable-or-listt-on-many-many-one-many-relatio
 
-## Yield
+## Yield and Iterations
+
 palavra-chave c# que permite criar um iterador a partir de um operador, expressão ou método.
+
 Esse iterador é diferente de uma coleção comum porque ele só sabe retornar o próximo elemento,
 ele não conhece a coleção inteira que está iterando. Dessa forma, consome menos memória e as vezes é mais rápido.
 
@@ -27,7 +29,9 @@ https://www.codeproject.com/Articles/1131583/Yield-or-Not-To-Yield (2016)
 
 
 ## ReadOnly x Const
+
 ReadOnly é definido em tempo de execução
+
 Const é definido em tempo de compilação 
 
 https://pt.stackoverflow.com/questions/151721/qual-%C3%A9-a-diferen%C3%A7a-entre-const-e-readonly
