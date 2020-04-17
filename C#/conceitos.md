@@ -25,3 +25,10 @@ Uma disvantagem é com relação ao debug, já que ele não conhece a coleção 
 https://dev.to/morganw09/benchmarking-the-yield-statement-in-c-2d8g (2019)
 https://www.codeproject.com/Articles/1131583/Yield-or-Not-To-Yield (2016)
 
+
+## ReadOnly x Const
+ReadOnly é definido em tempo de execução
+Const é definido em tempo de compilação 
+
+https://pt.stackoverflow.com/questions/151721/qual-%C3%A9-a-diferen%C3%A7a-entre-const-e-readonly
+http://www.macoratti.net/14/09/c_ctrdst.htm
