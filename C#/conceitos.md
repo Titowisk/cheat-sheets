@@ -1,8 +1,12 @@
 # Conceitos e palavras chaves importantes
 
 ## Table Per Hierarchy Inheritance
+??????????
 
 ## Anemic Model
+???????????
+
+Fontes: 
 https://martinfowler.com/bliki/AnemicDomainModel.html
 
 ## Entity x ValueObjects
@@ -38,12 +42,10 @@ https://pt.stackoverflow.com/questions/151721/qual-%C3%A9-a-diferen%C3%A7a-entre
 http://www.macoratti.net/14/09/c_ctrdst.htm
 
 ## CQRS - Command Query Responsability Segregation
+De forma básica, é a separação entre commands (ações) que fazem escrita no banco de dados
+e queries (consultas) que fazem apenas leitura no banco de dados.
 
-
-Fontes:
-https://www.youtube.com/watch?v=G0yi5PTzhLA André Baltieri
-
-## Mediator with CQRS
+### Mediator and CQRS
 
 É um padrão para abstração de comunicação.
 No CQRS, utilizando injeção de dependência, se atrela um Handler a um comando específico.
@@ -51,9 +53,12 @@ Usando  o mediador, o comando é enviado ao mediador que irá saber qual handler
 
 Fontes:
 https://www.youtube.com/watch?v=G0yi5PTzhLA André Baltieri
+https://balta.io/blog/aspnet-core-cqrs-mediator
 
-## Event Sourcing
+### Event Sourcing and CQRS
 ???
+
+---
 
 ## Dependency Injection
 Uma forma de aplicar o conceito: "Usar abstrações ao invés de depender de implementações".
@@ -63,5 +68,10 @@ irão usar implementações definidas. Pode ser através de um singleton (AddSco
 Então cada classe que quiser fazer uso da dependência, basta definir a abstração (Interface) correspondente
 em seu construtor.
 
+### Explicit Dependencies Principle
+
 Fontes:
 https://balta.io/blog/aspnet-core-dependency-injection
+
+## Primitive Obssession
+??????
