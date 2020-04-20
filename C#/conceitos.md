@@ -49,6 +49,9 @@ e queries (consultas) que fazem apenas leitura no banco de dados.
 
 É um padrão para abstração de comunicação.
 No CQRS, utilizando injeção de dependência, se atrela um Handler a um comando específico.
+Dessa forma, quanto mais commands, mais interfaces irão existir. E cada caso irá precisar
+de uma injeção de dependência no startup.cs
+
 Usando  o mediador, o comando é enviado ao mediador que irá saber qual handler utilizar naquele caso.
 
 Fontes:
@@ -58,7 +61,6 @@ https://balta.io/blog/aspnet-core-cqrs-mediator
 ### Event Sourcing and CQRS
 ???
 
----
 
 ## Dependency Injection
 Uma forma de aplicar o conceito: "Usar abstrações ao invés de depender de implementações".
