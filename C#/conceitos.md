@@ -53,3 +53,15 @@ Fontes:
 https://www.youtube.com/watch?v=G0yi5PTzhLA André Baltieri
 
 ## Event Sourcing
+???
+
+## Dependency Injection
+Uma forma de aplicar o conceito: "Usar abstrações ao invés de depender de implementações".
+No caso do Net Core isso é feito ao iniciar aplicação (Startup.cs). Lá é definido como as abstrações
+irão usar implementações definidas. Pode ser através de um singleton (AddScoped) ou não (AddTransient).
+
+Então cada classe que quiser fazer uso da dependência, basta definir a abstração (Interface) correspondente
+em seu construtor.
+
+Fontes:
+https://balta.io/blog/aspnet-core-dependency-injection
