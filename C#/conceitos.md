@@ -36,3 +36,20 @@ Const é definido em tempo de compilação
 
 https://pt.stackoverflow.com/questions/151721/qual-%C3%A9-a-diferen%C3%A7a-entre-const-e-readonly
 http://www.macoratti.net/14/09/c_ctrdst.htm
+
+## CQRS - Command Query Responsability Segregation
+
+
+Fontes:
+https://www.youtube.com/watch?v=G0yi5PTzhLA André Baltieri
+
+## Mediator with CQRS
+
+É um padrão para abstração de comunicação.
+No CQRS, utilizando injeção de dependência, se atrela um Handler a um comando específico.
+Usando  o mediador, o comando é enviado ao mediador que irá saber qual handler utilizar naquele caso.
+
+Fontes:
+https://www.youtube.com/watch?v=G0yi5PTzhLA André Baltieri
+
+## Event Sourcing
