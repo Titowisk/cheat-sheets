@@ -65,7 +65,7 @@ https://balta.io/blog/aspnet-core-cqrs-mediator
 ## Dependency Injection
 Uma forma de aplicar o conceito: "Usar abstrações ao invés de depender de implementações".
 No caso do Net Core isso é feito ao iniciar aplicação (Startup.cs). Lá é definido como as abstrações
-irão usar implementações definidas. Pode ser através de um singleton (AddScoped) ou não (AddTransient).
+irão usar implementações definidas. Pode ser através de um singleton (AddSingleton), Scoped (AddScoped) ou Transient (AddTransient). A diferença entre eles está na fontes.
 
 Então cada classe que quiser fazer uso da dependência, basta definir a abstração (Interface) correspondente
 em seu construtor.
@@ -74,6 +74,7 @@ em seu construtor.
 
 Fontes:
 https://balta.io/blog/aspnet-core-dependency-injection
+https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences
 
 ## Primitive Obssession
 ??????
