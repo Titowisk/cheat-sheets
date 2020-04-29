@@ -78,3 +78,15 @@ https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingl
 
 ## Primitive Obssession
 ??????
+
+## WebRequest x HttpClient x WebClient x HttpWebRequest x RestSharp
+O mais recomendado para net core é HttpClient
+Importante lembrar de utiliza-lo como um elemento stático da classe
+
+```
+private static readonly HttpClient _httpClient = new HttpClient();
+```
+
+Fontes:
+http://www.macoratti.net/16/08/net_web1.htm
+https://www.reddit.com/r/csharp/comments/ex80tv/so_i_created_a_benchmark_to_compare_the_following/
