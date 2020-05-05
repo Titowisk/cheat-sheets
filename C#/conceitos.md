@@ -90,3 +90,13 @@ private static readonly HttpClient _httpClient = new HttpClient();
 Fontes:
 http://www.macoratti.net/16/08/net_web1.htm
 https://www.reddit.com/r/csharp/comments/ex80tv/so_i_created_a_benchmark_to_compare_the_following/
+
+## XUnit + Moq
+Utilizando Moq é possível contabilizar quantas vezes um método é chamado. Porém esse número de chamadas é acumulado pois o construtor é chamado x vezes para uma quantidade x de métodos definidos no teste (Constructor and Dispose).
+Utilizando o Dispose dessa forma de testes do XUnit, pode-se resetar essa quantidade de chamadas para serem verificadas de forma correta em cada teste.
+?
+
+Fontes:
+https://xunit.net/docs/shared-context
+https://stackoverflow.com/questions/4163679/reset-mock-verification-in-moq
+
