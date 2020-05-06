@@ -100,3 +100,9 @@ Fontes:
 https://xunit.net/docs/shared-context
 https://stackoverflow.com/questions/4163679/reset-mock-verification-in-moq
 
+
+## Unit of Work: DataContext x TransactionScope:
+????????
+
+Fontes:
+
