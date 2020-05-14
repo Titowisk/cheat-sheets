@@ -26,7 +26,7 @@ palavra-chave c# que permite criar um iterador a partir de um operador, express�
 Esse iterador é diferente de uma coleção comum porque ele só sabe retornar o próximo elemento,
 ele não conhece a coleção inteira que está iterando. Dessa forma, consome menos memória e as vezes é mais rápido.
 
-Uma disvantagem é com relação ao debug, já que ele não conhece a coleção que está iterando.
+Uma desvantagem é com relação ao debug, já que ele não conhece a coleção que está iterando.
 
 https://dev.to/morganw09/benchmarking-the-yield-statement-in-c-2d8g (2019)
 https://www.codeproject.com/Articles/1131583/Yield-or-Not-To-Yield (2016)
