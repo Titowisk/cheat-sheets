@@ -97,20 +97,28 @@ Utilizando o Dispose dessa forma de testes do XUnit, pode-se resetar essa quanti
 ?
 
 Fontes:
+
 https://xunit.net/docs/shared-context
+
 https://stackoverflow.com/questions/4163679/reset-mock-verification-in-moq
 
+## Entity Framework
 
-## Unit of Work: DataContext x TransactionScope:
+### Repository Pattern and Unit of Work: are they really needed?
+?????
+
+### Unit of Work: DataContext x TransactionScope:
 ????????
 
 Fontes:
-
+https://www.reddit.com/r/csharp/comments/g6cfi9/good_examples_of_net_core_api_using_the/
 
 ## Perfomance: Tasks e Async/Await
 
 ### .NET ThreadPool starvation
 
-Fontes: 
+Fontes:
+
 https://www.reddit.com/r/csharp/comments/giexhm/performance_best_practices_in_c/
+
 https://medium.com/criteo-labs/net-threadpool-starvation-and-how-queuing-makes-it-worse-512c8d570527
