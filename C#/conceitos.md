@@ -106,3 +106,11 @@ https://stackoverflow.com/questions/4163679/reset-mock-verification-in-moq
 
 Fontes:
 
+
+## Perfomance: Tasks e Async/Await
+
+### .NET ThreadPool starvation
+
+Fontes: 
+https://www.reddit.com/r/csharp/comments/giexhm/performance_best_practices_in_c/
+https://medium.com/criteo-labs/net-threadpool-starvation-and-how-queuing-makes-it-worse-512c8d570527
