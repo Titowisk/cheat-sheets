@@ -7,3 +7,12 @@ significa que meu READ obteve dados que não existem.
 
 **READPAST**: também torna possível fazer leitura em dados bloqueados, mas somente irão ler aqueles que não sofrem alterações
 das transações WRITE abertas.
+
+
+## Data Table as Parameters
+
+????????????
+
+Fontes:
+- https://stackoverflow.com/questions/13806395/is-it-possible-to-get-table-type-definitions-from-information-schema
+- https://codingsight.com/passing-data-table-as-parameter-to-stored-procedures/#:~:text=A%20table%2Dvalued%20parameter%20is,of%20the%20table%2Dvalued%20parameters.
