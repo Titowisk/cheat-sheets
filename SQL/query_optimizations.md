@@ -51,5 +51,5 @@ Remove unneeded tables, subqueries, and joins.
 
 
 Fontes:
-https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff647793(v=pandp.10)?redirectedfrom=MSDN#queries
-https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/
+- https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff647793(v=pandp.10)?redirectedfrom=MSDN#queries
+- https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/
