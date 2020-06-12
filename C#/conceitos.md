@@ -125,3 +125,9 @@ Fontes:
 https://www.reddit.com/r/csharp/comments/giexhm/performance_best_practices_in_c/
 
 https://medium.com/criteo-labs/net-threadpool-starvation-and-how-queuing-makes-it-worse-512c8d570527
+
+### Separate Configuration Classes
+Usa um arquivo por entidade do modelo para configurar mapeamento com o banco de dados
+
+Fontes:
+https://www.learnentityframeworkcore.com/configuration/fluent-api#separate-configuration-classes
