@@ -1,10 +1,22 @@
 # Conceitos e palavras chaves importantes
 
-## Table Per Hierarchy Inheritance
-??????????
+## Enum x Enumerations x Table Per Hierarchy Inheritance
+Os três representar formas de se categorizar uma entidade. Evitam criar novas tabelas.
+
+### Enum
+Um conjunto de constantes que repesentam valores inteiros.
+
+### Enumerations
+Enumerations utiliza uma classe abstrata para definir enumerações mais verbosas e com mais funcionalidades.
+
+### TPH
+Consiste em implementar várias entidades diferentes porém similares utilizando uma mesma tabela do banco. Reduzindo assim a quantidade de tabelas no banco e também, possivelmente, a quantidade de joins para obter dados.
 
 Fontes:
+https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/enum
+https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types
 https://www.learnentityframeworkcore.com/inheritance/table-per-hierarchy
+
 
 ## Anemic Model
 ???????????
