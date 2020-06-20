@@ -13,10 +13,12 @@ Enumerations utiliza uma classe abstrata para definir enumerações mais verbosa
 Consiste em implementar várias entidades diferentes porém similares utilizando uma mesma tabela do banco. Reduzindo assim a quantidade de tabelas no banco e também, possivelmente, a quantidade de joins para obter dados.
 
 Fontes:
+
 https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/enum
 https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types
 https://www.learnentityframeworkcore.com/inheritance/table-per-hierarchy
-
+https://lostechies.com/jimmybogard/2008/08/12/enumeration-classes/
+https://ardalis.com/enum-alternatives-in-c/
 
 ## Anemic Model
 ???????????
