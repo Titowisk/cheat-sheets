@@ -14,6 +14,9 @@
 ??????????????????????????
 
 References:
+
 https://en.wikipedia.org/wiki/Software_architecture
+
 https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013
+
 https://en.wikipedia.org/wiki/Service-oriented_architecture
