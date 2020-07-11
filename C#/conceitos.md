@@ -92,14 +92,18 @@ em seu construtor.
 ### Explicit Dependencies Principle
 
 Fontes:
+
 https://balta.io/blog/aspnet-core-dependency-injection
+
 https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences
 
 ### One interface with multiple implementations
 Ver link com o tutorial.
 
 Fontes:
+
 https://stackoverflow.com/questions/39072001/dependency-injection-resolving-by-name
+
 https://www.c-sharpcorner.com/article/dependency-injection-with-multiple-implementations-of-the-same-interface/
 
 ## Primitive Obssession
