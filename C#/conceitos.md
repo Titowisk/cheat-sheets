@@ -98,13 +98,18 @@ https://balta.io/blog/aspnet-core-dependency-injection
 https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences
 
 ### One interface with multiple implementations
-Ver link com o tutorial.
+Cria-se um factory method que utiliza  `IServiceProvider.GetService(Type serviceType)`para buscar serviços em tempo de execução (runtime)
+Tem pessoas argumentando que essa estratégia é um (service locator anti-pattern), que seria melhor utilizar abstract factory de uma determinada forma.
 
 Fontes:
 
 https://stackoverflow.com/questions/39072001/dependency-injection-resolving-by-name
 
 https://www.c-sharpcorner.com/article/dependency-injection-with-multiple-implementations-of-the-same-interface/
+
+https://blog.ploeh.dk/2010/02/03/ServiceLocatorisanAnti-Pattern/ 
+
+https://stackoverflow.com/questions/31950362/factory-method-with-di-and-ioc/31956803#31956803 (abstract factory suggestion)
 
 ## Primitive Obssession
 ??????
