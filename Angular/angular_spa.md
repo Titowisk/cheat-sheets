@@ -39,6 +39,14 @@ or inside `some.component.html`:
   </div>
 ```
 
+### Any-to-Any Component Communication
+
+- BehaviorSubject
+
+References:
+
+https://fireship.io/lessons/sharing-data-between-angular-components-four-methods/
+
 ## Bootstrap and Angular
 https://valor-software.com/ngx-bootstrap/#/
 
