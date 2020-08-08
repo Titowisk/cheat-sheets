@@ -47,7 +47,15 @@ References:
 
 https://fireship.io/lessons/sharing-data-between-angular-components-four-methods/
 
+## AuthService
+
+## JwtHelper
+
+- Validate token (see if it is expired)
+- Decrypt token to get values from it.
+
 ## Bootstrap and Angular
+
 https://valor-software.com/ngx-bootstrap/#/
 
 Uses bootstrap and angular but avoids using jquery
