@@ -65,4 +65,8 @@ You can protect routes by only allowing logged users to them.
 
 Look at `routes.ts` and `_guards/` service created using `ng g guard auth --skipTests`
 
+## Forms
 
+### Template-Driven Forms
+
+### Reactive-Drive Forms
