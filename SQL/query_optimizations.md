@@ -48,8 +48,20 @@ Break a large query into smaller queries whose data sets can later be joined tog
 For very heavily used queries, consider an indexed view to streamline constant access to important data.
 Remove unneeded tables, subqueries, and joins.
 
+## Evaluate performance requirements per transaction
+>Sometimes databases advertise their performance characteristics and limitations in terms of write and read throughput and latency. Although this may give a high level overview of the major blockers, when evaluating a new database for performance, a more comprehensive approach is to evaluate critical operations (per query and/or per transaction) separately. 
+
+Examples:
+
+- Write throughput and latency when inserting a new row in to table X (with 50M rows) with given constraints and populating rows in related tables.
+
+- Latency when querying the friends of friends of a user when average number of friends is 500.
+
+- Latency of retrieving the top 100 records for the user timeline when user is subscribed to 500 accounts which has X entries per hour.
+
 
 
 Fontes:
 - https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff647793(v=pandp.10)?redirectedfrom=MSDN#queries
 - https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/
+- https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78
