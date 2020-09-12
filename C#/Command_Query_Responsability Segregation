@@ -1,0 +1,19 @@
+## CQRS - Command Query Responsability Segregation
+De forma básica, é a separação entre commands (ações) que fazem escrita no banco de dados
+e queries (consultas) que fazem apenas leitura no banco de dados.
+
+### Mediator and CQRS
+
+É um padrão para abstração de comunicação.
+No CQRS, utilizando injeção de dependência, se atrela um Handler a um comando específico.
+Dessa forma, quanto mais commands, mais interfaces irão existir. E cada caso irá precisar
+de uma injeção de dependência no startup.cs
+
+Usando  o mediador, o comando é enviado ao mediador que irá saber qual handler utilizar naquele caso.
+
+Fontes:
+https://www.youtube.com/watch?v=G0yi5PTzhLA André Baltieri
+https://balta.io/blog/aspnet-core-cqrs-mediator
+
+### Event Sourcing and CQRS
+???
