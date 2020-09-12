@@ -60,26 +60,6 @@ Const é definido em tempo de compilação
 https://pt.stackoverflow.com/questions/151721/qual-%C3%A9-a-diferen%C3%A7a-entre-const-e-readonly
 http://www.macoratti.net/14/09/c_ctrdst.htm
 
-## CQRS - Command Query Responsability Segregation
-De forma básica, é a separação entre commands (ações) que fazem escrita no banco de dados
-e queries (consultas) que fazem apenas leitura no banco de dados.
-
-### Mediator and CQRS
-
-É um padrão para abstração de comunicação.
-No CQRS, utilizando injeção de dependência, se atrela um Handler a um comando específico.
-Dessa forma, quanto mais commands, mais interfaces irão existir. E cada caso irá precisar
-de uma injeção de dependência no startup.cs
-
-Usando  o mediador, o comando é enviado ao mediador que irá saber qual handler utilizar naquele caso.
-
-Fontes:
-https://www.youtube.com/watch?v=G0yi5PTzhLA André Baltieri
-https://balta.io/blog/aspnet-core-cqrs-mediator
-
-### Event Sourcing and CQRS
-???
-
 
 ## Dependency Injection
 Uma forma de aplicar o conceito: "Usar abstrações ao invés de depender de implementações".
@@ -153,16 +133,4 @@ Usa um arquivo por entidade do modelo para configurar mapeamento com o banco de 
 Fontes:
 https://www.learnentityframeworkcore.com/configuration/fluent-api#separate-configuration-classes
 
-## Security
 
-### Passwords
-Guardando em texto puro definitivamente não é seguro.
-
-Usando algoritmos de encriptagem? evita certos problemas. Mas o hash gerado por uma determinada palavra é sempre a mesma. Então se um atacante pegar uma lista das senhas
-mais comuns e passar por encriptagem? ele pode acabar descobrindo o algoritmo utilizado. (partindo do pressuposto que ele possua acesso ao banco claro)
-
-Usando um salt, duas palavras iguais irão gerar hashs diferentes. O que é mais seguro.
-
-Fontes:
-
-https://medium.com/dealeron-dev/storing-passwords-in-net-core-3de29a3da4d2#:~:text=BCrypt%20and%20PBKDF2%20are%20both,slower%20the%20algorithm%2C%20the%20better.
