@@ -59,9 +59,21 @@ Examples:
 
 - Latency of retrieving the top 100 records for the user timeline when user is subscribed to 500 accounts which has X entries per hour.
 
+# Reference: sqlshack
+
+## Table Indexes and Statistics
+The plan will be created based on the query processor tree, resulting from the binding step, and the database tables and indexes statistics, that describes the distribution and uniqueness of the data within the database objects, making sure that the optimization level setting is configured as Full. These statistics help the SQL Server Query Optimizer to compare the number of records returned from scanning all the table rows and the records returned from using different indexes, with the cost of each operation. It is very important to keep the statistics of the database tables and indexes up to date, in order to be able to create the most optimal execution plan.
+
+## Stored Procedures
+Reusing execution plans is very beneficial in the case of stored procedures that are executed frequently with different parameters but are still using the same cached execution plan.
+
+## Subtree Cost of the Operator
+We usually concentrate on the subtree cost of the operator that represents the execution tree that the SQL Server Engine has looked at so far, from right to left, and top to bottom. In the complex plans, that consists of large number of operators, the full cost of the plan can be derived from the final operation accumulatively.
+
 
 
 Fontes:
 - https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff647793(v=pandp.10)?redirectedfrom=MSDN#queries
 - https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/
 - https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78
+- https://www.sqlshack.com/how-to-analyze-sql-execution-plan-graphical-components/
