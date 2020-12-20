@@ -30,7 +30,36 @@ The **thickness of the arrow** indicates the amount of data passed between the o
 Estimated Execution Plan is usefull when the process takes too long to execute.
 Actual Execution Plan is the prefered way to analize things.
 
+## Indexes
+
+### Índice de nível único
+
+- Índice principal/primário
+- Índice clustering
+- Índice secundário
+
+### Caractéristicas
+Índices clustering são índices caros, pois exige que a tabela esteja fisicamente organizada o tempo todo.
+
+Índices gerados a partir de atributos de valores únicos são os que apresentam melhor desempenho no acesso, pois
+são índices de baixa cardinalidade (cada valor obtém um único registro)
+
+Índices baseados em atributos que sofrem pouca ou nenhuma atualização de seus dados são índices de melhor desempenho 
+na manutenção (a estrutura do índice não sofre atualizações, apenas inserções)
+
+### Quando usar
+
+- Existem chaves primárias com garantia de unicidade
+- Tabelas grandes e constantemente utilizadas
+- Atributos frequentemente utilizados em cláusulas WHERE
+
+### Quando não usar
+
+- Tabelas muito pequenas
+- Tabelas que precisam ser acessadas com varreduras (table scan)
+- Atributos com domínios de poucos valores distintos
 
 Fonte:
 - https://www.sqlshack.com/how-to-analyze-sql-execution-plan-graphical-components/
 - https://www.sqlshack.com/sql-server-execution-plans-types/
+- BD2 - 01 - Organização, Índices e Catálogos.pdf (semestre 6/)
